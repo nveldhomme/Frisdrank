@@ -6,8 +6,8 @@ Stand: 19 oktober 2026. De app toont zelf per bron de actuele status (tabblad **
 
 | Keten | Filialen in regio | Automatisch? | Bron | Niveau | Opmerking |
 |---|---|---|---|---|---|
-| **EDEKA** | 17 (Emmerich, Kleve, Goch, Rees, Bocholt, Rhede) | **Ja** | Officiële aanbiedingen-API van edeka.de, per filiaalnummer | Per filiaal | Structuur gecontroleerd; echte lokale aanbiedingen. Startdatum wordt niet altijd meegegeven (dan “startdatum niet vermeld”). EDEKA Kusenberg Goch nog zonder filiaalnummer. |
-| **REWE** | 8 | **Ja** | rewe.de/angebote/nationale-angebote/… (robots.txt staat deze paden expliciet toe) | Landelijk | Alleen de landelijke folder, niet per filiaal bevestigd. Pagina-indeling is HTML; als REWE die wijzigt of het verzoek blokkeert (403 vanaf datacenter-IP's komt voor), blijven de laatste gegevens staan. **Eerste live run controleren.** |
+| **EDEKA** | 17 (Emmerich, Kleve, Goch, Rees, Bocholt, Rhede) | **Ja – werkt** | Officiële aanbiedingen-API van edeka.de, per filiaalnummer | Per filiaal | Structuur gecontroleerd; echte lokale aanbiedingen. Startdatum wordt niet altijd meegegeven (dan “startdatum niet vermeld”). EDEKA Kusenberg Goch nog zonder filiaalnummer. |
+| **REWE** | 8 | **Ja** | rewe.de/angebote/nationale-angebote/… (robots.txt staat deze paden expliciet toe) | Landelijk | Alleen de landelijke folder, niet per filiaal bevestigd. **Eerste live run (19-10-2026): REWE weigert verzoeken vanaf de servers van GitHub (HTTP 403).** Dat wordt niet omzeild. De koppeling blijft aan staan (kost niets en werkt mogelijk later wel), maar reken voor REWE voorlopig op handmatige invoer. |
 | **Kaufland** | 5 | Nee | — | — | Website toont een Cloudflare-botcontrole. Niet omzeild. Handmatige invoer. |
 | **Lidl** | 10 | Nee | — | — | Online folder bevat productnamen maar geen prijzen in machineleesbare vorm. Handmatige invoer. |
 | **Netto** | 18 | Nee | — | — | Bot-bescherming en robots.txt sluit de data-endpoints uit. Handmatige invoer. |
@@ -39,5 +39,5 @@ Platforms zoals marktguru en kaufDA bundelen folders van alle ketens, ook Kaufla
 - **Klantenkaart / app-prijzen** worden herkend aan tekst in de folder (“App”, “Coupon”, “Kaufland Card”, “PAYBACK” …). Niet elke formulering wordt herkend; controleer de voorwaarden.
 - **Aankooplimieten** worden alleen overgenomen als ze in de tekst staan.
 - **Aanvullende REWE Bonus-tegoeden** worden als opmerking getoond, niet van de prijs afgetrokken.
-- **De automatische koppelingen zijn vanuit de ontwikkelomgeving niet live gedraaid** (geen toegang tot die websites daar). De EDEKA-structuur is wel vooraf gecontroleerd; voor REWE is de paginatekst gecontroleerd maar niet de exacte HTML. Kijk na de eerste run in *Actions* en op het tabblad Bronnen.
+- **Eerste live run (19-10-2026):** EDEKA gaf 16 van 17 filialen terug (EDEKA Reuling in Bocholt publiceert online geen aanbiedingen) met 90 relevante aanbiedingen, gecontroleerd tegen de bron. REWE: geblokkeerd (zie boven).
 - De startgegevens in `data/manual-offers.csv` (REWE Red Bull/Coca-Cola, EDEKA E center Schroff Kleve Coca-Cola/Fanta/Sprite blikjes) zijn op 19-10-2026 overgenomen van de officiële bronnen en verlopen vanzelf.
