@@ -1,0 +1,361 @@
+{
+ "at": "2026-10-19T09:10:55.095Z",
+ "today": "2026-10-19",
+ "results": [
+  {
+   "url": "https://www.penny.de/.rest/offers/by-category/2026-43/getraenke?region=15A-09-33",
+   "status": 200,
+   "finalUrl": "https://www.penny.de/.rest/offers/by-category/2026-43/getraenke?region=15A-09-33",
+   "type": "application/json;charset=UTF-8",
+   "length": 15028,
+   "rawFile": "diagnose/raw-0.txt",
+   "flags": {
+    "nextData": false,
+    "ldJson": false,
+    "nuxt": false,
+    "cloudflare": false,
+    "restPaths": [],
+    "apiHosts": []
+   },
+   "jsonShape": {
+    "offerTiles": [
+     "len=9",
+     {
+      "title": "string",
+      "type": "string",
+      "quantity": "string",
+      "lowestPrice30Days": "object",
+      "priceFrom": "boolean",
+      "price": "string",
+      "actionPrice": "boolean",
+      "actionPriceFrom": "boolean",
+      "showOriginalPrice": "boolean",
+      "multiBuy": "boolean",
+      "bargainPrice": "boolean",
+      "originalPrice": "string",
+      "originalPriceType": "string",
+      "basePrice": "string",
+      "discount": "boolean",
+      "discountPercentage": "string",
+      "onlyOnline": "boolean",
+      "alsoOnline": "boolean",
+      "imageRendition": {
+       "tileXs": "string",
+       "tileSm": "string",
+       "tileMd": "string",
+       "tileLg": "string",
+       "tileXl": "string",
+       "imageAlt": "string",
+       "imageTitle": "string"
+      },
+      "productData": "string",
+      "linkHref": "string",
+      "detailLinkHref": "string",
+      "uuid": "string",
+      "primaryType": "string"
+     }
+    ]
+   },
+   "jsonSample": "{\"offerTiles\":[{\"title\":\"MONSTER Energy-Drink*\",\"type\":\"food\",\"quantity\":\"je 0,5 I\",\"lowestPrice30Days\":null,\"priceFrom\":false,\"price\":\"0.99\",\"actionPrice\":false,\"actionPriceFrom\":false,\"showOriginalPrice\":true,\"multiBuy\":false,\"bargainPrice\":false,\"originalPrice\":\"1.59\",\"originalPriceType\":\"uvp\",\"basePrice\":\"(1 l = 1.98)\",\"discount\":true,\"discountPercentage\":\"-37%\",\"onlyOnline\":false,\"alsoOnline\":false,\"imageRendition\":{\"tileXs\":\"https://cdn.penny.de/dam/jcr:2086af3a-824e-4328-b58a-8a59e112e0a9/24972656.png?impolicy=penny&imwidth=100\",\"tileSm\":\"https://cdn.penny.de/dam/jcr:2086af3a-824e-4328-b58a-8a59e112e0a9/24972656.png?impolicy=penny&imwidth=200\",\"tileMd\":\"https://cdn.penny.de/dam/jcr:2086af3a-824e-4328-b58a-8a59e112e0a9/24972656.png?impolicy=penny&imwidth=400\",\"tileLg\":\"https://cdn.penny.de/dam/jcr:2086af3a-824e-4328-b58a-8a59e112e0a9/24972656.png?impolicy=penny&imwidth=600\",\"tileXl\":\"https://cdn.penny.de/dam/jcr:2086af3a-824e-4328-b58a-8a59e112e0a9/24972656.png?impolicy=penny&imwidth=800\",\"imageAlt\":\"MONSTER Energy-Drink* 0.99\",\"imageTitle\":\"MONSTER Energy-Drink* 0.99 (1 l = 1.98)\"},\"productData\":\"{\\\"id\\\":\\\"c06852d6-f4a6-4f83-8002-f8a0f0badf85\\\",\\\"name\\\":\\\"monster-energy-drink\\\",\\\"category\\\":\\\"getraenke\\\",\\\"price\\\":\\\"0.9900\\\",\\\"units\\\":1,\\\"rrp\\\":\\\"1.5900\\\",\\\"savingsPercent\\\":\\\"37.0000\\\",\\\"savingsAmount\\\":\\\"0.6000\\\",\\\"disturberType\\\":\\\"Rabatt\\\",\\\"listPosition\\\":\\\"1\\\",\\\"shoppable\\\":\\\"not_set\\\",\\\"promotion\\\":\\\"reduzierter Preis\\\"}\",\"linkHref\":\"/angebote/getraenke/monster-energy-drink\",\"detailLinkHref\":\"/angebote/getraenke/monster-energy-drink~mgnlArea=main~\",\"uuid\":\"c06852d6-f4a6-4f83-8002-f8a0f0badf85\",\"primaryType\":\"offer\"},{\"title\":\"GRÄF’S Adventskalender*\",\"type\":\"food\",\"quantity\":\"je 24 x 0,02 l\",\"lowestPrice30Days\":null,\"priceFrom\":false,\"price\":\"11.99\",\"actionPrice\":false,\"actionPriceFrom\":false,\"showOriginalPrice\":true,\"multiBuy\":false,\"bargainPrice\":false,\"originalPrice\":\"14.99\",\"originalPriceType\":\"uvp\",\"basePrice\":\"(1 l = 24.98)\",\"discount\":true,\"discountPercentage\":\"-20%\",\"onlyOnline\":false,\"alsoOnline\":false,\"imageRendition\":{\"tileXs\":\"https://cdn.penny.de/dam/jcr:55a48343-df73-479a-8efd-5831ec1143fe/56642247.png?impolicy=penny&imwidth=100\",\"tileSm\":\"https://cdn.penny.de/dam/jcr:55a48343-df73-479a-8efd-5831ec1143fe/56642247.png?impolicy=penny&imwidth=200\",\"tileMd\":\"https://cdn.penny.de/dam/jcr:55a48343-df73-479a-8efd-5831ec1143fe/56642247.png?impolicy=penny&imwidth=400\",\"tileLg\":\"https://cdn.penny.de/dam/jcr:55a48343-df73-479a-8efd-5831ec1143fe/56642247.png?impolicy=penny&imwidth=600\",\"tileXl\":\"https://cdn.penny.de/dam/jcr:55a48343-df73-479a-8efd-5831ec1143fe/56642247.png?impolicy=penny&imwidth=800\",\"imageAlt\":\"GRÄF’S Adventskalender* 11.99\",\"imageTitle\":\"GRÄF’S Adventskalender* 11.99 (1 l = 24.98)\"},\"productData\":\"{\\\"id\\\":\\\"ebf2558e-a402-4a9a-b796-d20adf2a3a9d\\\",\\\"name\\\":\\\"graefs-adventskalender\\\",\\\"category\\\":\\\"getraenke\\\",\\\"price\\\":\\\"11.9900\\\",\\\"units\\\":1,\\\"rrp\\\":\\\"14.9900\\\",\\\"savingsPercent\\\":\\\"20.0000\\\",\\\"savingsAmount\\\":\\\"3."
+  },
+  {
+   "url": "https://www.penny.de/.rest/offers/by-category/2026-43/top-angebote?region=15A-09-33",
+   "status": 200,
+   "finalUrl": "https://www.penny.de/.rest/offers/by-category/2026-43/top-angebote?region=15A-09-33",
+   "type": "application/json;charset=UTF-8",
+   "length": 12139,
+   "rawFile": "diagnose/raw-1.txt",
+   "flags": {
+    "nextData": false,
+    "ldJson": false,
+    "nuxt": false,
+    "cloudflare": false,
+    "restPaths": [],
+    "apiHosts": []
+   },
+   "jsonShape": {
+    "offerTiles": [
+     "len=8",
+     {
+      "title": "string",
+      "type": "string",
+      "quantity": "string",
+      "lowestPrice30Days": "object",
+      "bargainPrice": "boolean",
+      "actionMarker": "object",
+      "price": "string",
+      "listPrice": "string",
+      "crossOutPrice": "object",
+      "advantage": "string",
+      "basePrice": "string",
+      "benefitPrice": "string",
+      "benefitValue": "string",
+      "benefitGroundPrice": "string",
+      "imageRendition": {
+       "tileXs": "string",
+       "tileSm": "string",
+       "tileMd": "string",
+       "tileLg": "string",
+       "tileXl": "string",
+       "imageAlt": "string",
+       "imageTitle": "string"
+      },
+      "actionPrice": "boolean",
+      "productData": "string",
+      "linkHref": "string",
+      "detailLinkHref": "string",
+      "uuid": "string",
+      "primaryType": "string"
+     }
+    ]
+   },
+   "jsonSample": "{\"offerTiles\":[{\"title\":\"LÄTTA Halbfettmargarine*\",\"type\":\"food\",\"quantity\":\"je 450 g\",\"lowestPrice30Days\":null,\"bargainPrice\":false,\"actionMarker\":null,\"price\":\"1.29\",\"listPrice\":\"2.29\",\"crossOutPrice\":null,\"advantage\":\"43%\",\"basePrice\":\"(1 kg = 2.87)\",\"benefitPrice\":\"0.99²\",\"benefitValue\":\"56%¹\",\"benefitGroundPrice\":\"(1 kg = 2.20)\",\"imageRendition\":{\"tileXs\":\"https://cdn.penny.de/dam/jcr:34983d11-9437-48e2-bf3d-0c020bce10ec/38979927.png?impolicy=penny&imwidth=100\",\"tileSm\":\"https://cdn.penny.de/dam/jcr:34983d11-9437-48e2-bf3d-0c020bce10ec/38979927.png?impolicy=penny&imwidth=200\",\"tileMd\":\"https://cdn.penny.de/dam/jcr:34983d11-9437-48e2-bf3d-0c020bce10ec/38979927.png?impolicy=penny&imwidth=400\",\"tileLg\":\"https://cdn.penny.de/dam/jcr:34983d11-9437-48e2-bf3d-0c020bce10ec/38979927.png?impolicy=penny&imwidth=600\",\"tileXl\":\"https://cdn.penny.de/dam/jcr:34983d11-9437-48e2-bf3d-0c020bce10ec/38979927.png?impolicy=penny&imwidth=800\",\"imageAlt\":\"RED BULL Energy-Drink* 0.99\",\"imageTitle\":\"RED BULL Energy-Drink* 0.99 je 250 ml (1 l = 3.96)\"},\"actionPrice\":false,\"productData\":\"{\\\"id\\\":\\\"1f6637fe-ac24-4275-a35c-b49d2d52cca4\\\",\\\"name\\\":\\\"laetta-halbfettmargarine\\\",\\\"category\\\":\\\"top-angebote\\\",\\\"price\\\":\\\"1.2900\\\",\\\"units\\\":1,\\\"rrp\\\":\\\"2.2900\\\",\\\"savingsPercent\\\":\\\"43.0000\\\",\\\"savingsAmount\\\":\\\"1.0000\\\",\\\"disturberType\\\":\\\"Rabatt\\\",\\\"listPosition\\\":\\\"1\\\",\\\"shoppable\\\":\\\"not_set\\\",\\\"promotion\\\":\\\"reduzierter Preis\\\"}\",\"linkHref\":\"/angebote/top-angebote/laetta-halbfettmargarine\",\"detailLinkHref\":\"/angebote/top-angebote/laetta-halbfettmargarine~mgnlArea=main~\",\"uuid\":\"1f6637fe-ac24-4275-a35c-b49d2d52cca4\",\"primaryType\":\"promoPlus\"},{\"title\":\"GRÜNLÄNDER Käsescheiben*\",\"type\":\"food\",\"quantity\":\"je 156 g\",\"lowestPrice30Days\":null,\"priceFrom\":false,\"price\":\"1.79\",\"actionPrice\":false,\"actionPriceFrom\":false,\"showOriginalPrice\":true,\"multiBuy\":false,\"bargainPrice\":false,\"originalPrice\":\"2.99\",\"originalPriceType\":\"uvp\",\"basePrice\":\"(1 kg = 11.47)\",\"discount\":true,\"discountPercentage\":\"-40%\",\"onlyOnline\":false,\"alsoOnline\":false,\"imageRendition\":{\"tileXs\":\"https://cdn.penny.de/dam/jcr:8d033e0c-1230-41c2-9de4-c3754552585a/47840184.png?impolicy=penny&imwidth=100\",\"tileSm\":\"https://cdn.penny.de/dam/jcr:8d033e0c-1230-41c2-9de4-c3754552585a/47840184.png?impolicy=penny&imwidth=200\",\"tileMd\":\"https://cdn.penny.de/dam/jcr:8d033e0c-1230-41c2-9de4-c3754552585a/47840184.png?impolicy=penny&imwidth=400\",\"tileLg\":\"https://cdn.penny.de/dam/jcr:8d033e0c-1230-41c2-9de4-c3754552585a/47840184.png?impolicy=penny&imwidth=600\",\"tileXl\":\"https://cdn.penny.de/dam/jcr:8d033e0c-1230-41c2-9de4-c3754552585a/47840184.png?impolicy=penny&imwidth=800\",\"imageAlt\":\"GRÜNLÄNDERKäsescheiben* 1.79\",\"imageTitle\":\"GRÜNLÄNDERKäsescheiben* 1.79 (1 kg = 11.47)\"},\"productData\":\"{\\\"id\\\":\\\"9790fb64-88b6-4bb6-8c33-445874cd7fa8\\\",\\\"name\\\":\\\"gruenlaender-kaesescheiben\\\",\\\"category\\\":\\\"top-angebote\\\",\\\"price\\\":\\\"1.7900\\\",\\\"units\\\":1,\\\"rrp\\\":\\\"2.9900\\\",\\\"savingsPercent\\\":\\\"40.0000\\\",\\\"savingsAmount\\\":\\\"1.2000\\\",\\\"disturb"
+  },
+  {
+   "url": "https://www.penny.de/.rest/offers/by-category/2026-43/sparen-auf-top-marken?region=15A-09-33",
+   "status": 200,
+   "finalUrl": "https://www.penny.de/.rest/offers/by-category/2026-43/sparen-auf-top-marken?region=15A-09-33",
+   "type": "application/json;charset=UTF-8",
+   "length": 13523,
+   "rawFile": "diagnose/raw-2.txt",
+   "flags": {
+    "nextData": false,
+    "ldJson": false,
+    "nuxt": false,
+    "cloudflare": false,
+    "restPaths": [],
+    "apiHosts": []
+   },
+   "jsonShape": {
+    "offerTiles": [
+     "len=8",
+     {
+      "title": "string",
+      "type": "string",
+      "quantity": "string",
+      "lowestPrice30Days": "object",
+      "priceFrom": "boolean",
+      "price": "string",
+      "actionPrice": "boolean",
+      "actionPriceFrom": "boolean",
+      "showOriginalPrice": "boolean",
+      "multiBuy": "boolean",
+      "bargainPrice": "boolean",
+      "originalPrice": "string",
+      "originalPriceType": "string",
+      "basePrice": "string",
+      "discount": "boolean",
+      "discountPercentage": "string",
+      "onlyOnline": "boolean",
+      "alsoOnline": "boolean",
+      "imageRendition": {
+       "tileXs": "string",
+       "tileSm": "string",
+       "tileMd": "string",
+       "tileLg": "string",
+       "tileXl": "string",
+       "imageAlt": "string",
+       "imageTitle": "string"
+      },
+      "productData": "string",
+      "linkHref": "string",
+      "detailLinkHref": "string",
+      "uuid": "string",
+      "primaryType": "string"
+     }
+    ]
+   },
+   "jsonSample": "{\"offerTiles\":[{\"title\":\"NESCAFÉ Gold*\",\"type\":\"food\",\"quantity\":\"je 200 g\",\"lowestPrice30Days\":null,\"priceFrom\":false,\"price\":\"6.99\",\"actionPrice\":false,\"actionPriceFrom\":false,\"showOriginalPrice\":true,\"multiBuy\":false,\"bargainPrice\":false,\"originalPrice\":\"12.49\",\"originalPriceType\":\"uvp\",\"basePrice\":\"(1 kg = 34.95)\",\"discount\":true,\"discountPercentage\":\"-44%\",\"onlyOnline\":false,\"alsoOnline\":false,\"imageRendition\":{\"tileXs\":\"https://cdn.penny.de/dam/jcr:61a88fdc-e873-4f29-8f6d-41529b840d5e/27435985.png?impolicy=penny&imwidth=100\",\"tileSm\":\"https://cdn.penny.de/dam/jcr:61a88fdc-e873-4f29-8f6d-41529b840d5e/27435985.png?impolicy=penny&imwidth=200\",\"tileMd\":\"https://cdn.penny.de/dam/jcr:61a88fdc-e873-4f29-8f6d-41529b840d5e/27435985.png?impolicy=penny&imwidth=400\",\"tileLg\":\"https://cdn.penny.de/dam/jcr:61a88fdc-e873-4f29-8f6d-41529b840d5e/27435985.png?impolicy=penny&imwidth=600\",\"tileXl\":\"https://cdn.penny.de/dam/jcr:61a88fdc-e873-4f29-8f6d-41529b840d5e/27435985.png?impolicy=penny&imwidth=800\",\"imageAlt\":\"NESCAFÉ Gold* 6.99\",\"imageTitle\":\"NESCAFÉ Gold* 6.99 (1 kg = 34.95)\"},\"productData\":\"{\\\"id\\\":\\\"a10a229a-80d5-41c4-acb8-23e81b747847\\\",\\\"name\\\":\\\"nescafe-gold\\\",\\\"category\\\":\\\"sparen-auf-top-marken\\\",\\\"price\\\":\\\"6.9900\\\",\\\"units\\\":1,\\\"rrp\\\":\\\"12.4900\\\",\\\"savingsPercent\\\":\\\"44.0000\\\",\\\"savingsAmount\\\":\\\"5.5000\\\",\\\"disturberType\\\":\\\"Rabatt\\\",\\\"listPosition\\\":\\\"1\\\",\\\"shoppable\\\":\\\"not_set\\\",\\\"promotion\\\":\\\"reduzierter Preis\\\"}\",\"linkHref\":\"/angebote/sparen-auf-top-marken/nescafe-gold\",\"detailLinkHref\":\"/angebote/sparen-auf-top-marken/nescafe-gold~mgnlArea=main~\",\"uuid\":\"a10a229a-80d5-41c4-acb8-23e81b747847\",\"primaryType\":\"offer\"},{\"title\":\"KNORR Hütten Schmaus*\",\"type\":\"food\",\"quantity\":\"je 166 g\",\"lowestPrice30Days\":null,\"priceFrom\":false,\"price\":\"1.49\",\"actionPrice\":true,\"actionPriceFrom\":false,\"showOriginalPrice\":false,\"multiBuy\":false,\"bargainPrice\":false,\"originalPrice\":null,\"originalPriceType\":null,\"basePrice\":\"(1 kg = 8.98)\",\"discount\":false,\"discountPercentage\":null,\"onlyOnline\":false,\"alsoOnline\":false,\"imageRendition\":{\"tileXs\":\"https://cdn.penny.de/dam/jcr:83d0c420-fc9c-4950-ba52-e7780b6388c9/49794180.png?impolicy=penny&imwidth=100\",\"tileSm\":\"https://cdn.penny.de/dam/jcr:83d0c420-fc9c-4950-ba52-e7780b6388c9/49794180.png?impolicy=penny&imwidth=200\",\"tileMd\":\"https://cdn.penny.de/dam/jcr:83d0c420-fc9c-4950-ba52-e7780b6388c9/49794180.png?impolicy=penny&imwidth=400\",\"tileLg\":\"https://cdn.penny.de/dam/jcr:83d0c420-fc9c-4950-ba52-e7780b6388c9/49794180.png?impolicy=penny&imwidth=600\",\"tileXl\":\"https://cdn.penny.de/dam/jcr:83d0c420-fc9c-4950-ba52-e7780b6388c9/49794180.png?impolicy=penny&imwidth=800\",\"imageAlt\":\"KNORR Hütten Schmaus* 1.49\",\"imageTitle\":\"KNORR Hütten Schmaus* 1.49 (1 kg = 8.98)\"},\"productData\":\"{\\\"id\\\":\\\"c4c96153-e96c-4c21-bedb-72bb68758884\\\",\\\"name\\\":\\\"knorr-huetten-schmaus\\\",\\\"category\\\":\\\"sparen-auf-top-marken\\\",\\\"price\\\":\\\"1.4900\\\",\\\"units\\\":1,\\\"rrp\\\":\\\"not_set\\\",\\\"savingsPercent\\\":\\\"0.0000\\\",\\\"savingsAmount\\\":\\\"0.0000\\\",\\\"disturbe"
+  },
+  {
+   "url": "https://www.penny.de/.rest/offers/by-category/2026-43/getraenke1?region=15A-09-33",
+   "status": 200,
+   "finalUrl": "https://www.penny.de/.rest/offers/by-category/2026-43/getraenke1?region=15A-09-33",
+   "type": "application/json;charset=UTF-8",
+   "length": 18224,
+   "rawFile": "diagnose/raw-3.txt",
+   "flags": {
+    "nextData": false,
+    "ldJson": false,
+    "nuxt": false,
+    "cloudflare": false,
+    "restPaths": [],
+    "apiHosts": []
+   },
+   "jsonShape": {
+    "offerTiles": [
+     "len=11",
+     {
+      "title": "string",
+      "type": "string",
+      "quantity": "string",
+      "lowestPrice30Days": "object",
+      "priceFrom": "boolean",
+      "price": "string",
+      "actionPrice": "boolean",
+      "actionPriceFrom": "boolean",
+      "showOriginalPrice": "boolean",
+      "multiBuy": "boolean",
+      "bargainPrice": "boolean",
+      "originalPrice": "string",
+      "originalPriceType": "string",
+      "basePrice": "string",
+      "discount": "boolean",
+      "discountPercentage": "string",
+      "onlyOnline": "boolean",
+      "alsoOnline": "boolean",
+      "imageRendition": {
+       "tileXs": "string",
+       "tileSm": "string",
+       "tileMd": "string",
+       "tileLg": "string",
+       "tileXl": "string",
+       "imageAlt": "string",
+       "imageTitle": "string"
+      },
+      "productData": "string",
+      "linkHref": "string",
+      "detailLinkHref": "string",
+      "uuid": "string",
+      "primaryType": "string"
+     }
+    ]
+   },
+   "jsonSample": "{\"offerTiles\":[{\"title\":\"COCA-COLA*\",\"type\":\"food\",\"quantity\":\"je 6 x 0,33 l\",\"lowestPrice30Days\":null,\"priceFrom\":false,\"price\":\"4.49\",\"actionPrice\":false,\"actionPriceFrom\":false,\"showOriginalPrice\":true,\"multiBuy\":false,\"bargainPrice\":false,\"originalPrice\":\"4.99\",\"originalPriceType\":\"uvp\",\"basePrice\":\"(1 l = 2.27)\",\"discount\":true,\"discountPercentage\":\"-10%\",\"onlyOnline\":false,\"alsoOnline\":false,\"imageRendition\":{\"tileXs\":\"https://cdn.penny.de/dam/jcr:fe875cc4-3432-44da-8dca-62266ea507f3/42354915.png?impolicy=penny&imwidth=100\",\"tileSm\":\"https://cdn.penny.de/dam/jcr:fe875cc4-3432-44da-8dca-62266ea507f3/42354915.png?impolicy=penny&imwidth=200\",\"tileMd\":\"https://cdn.penny.de/dam/jcr:fe875cc4-3432-44da-8dca-62266ea507f3/42354915.png?impolicy=penny&imwidth=400\",\"tileLg\":\"https://cdn.penny.de/dam/jcr:fe875cc4-3432-44da-8dca-62266ea507f3/42354915.png?impolicy=penny&imwidth=600\",\"tileXl\":\"https://cdn.penny.de/dam/jcr:fe875cc4-3432-44da-8dca-62266ea507f3/42354915.png?impolicy=penny&imwidth=800\",\"imageAlt\":\"COCA-COLA* 4.49\",\"imageTitle\":\"COCA-COLA* 4.49 (1 l = 2.27)\"},\"productData\":\"{\\\"id\\\":\\\"6ecde256-a8ad-4e98-993a-aa5118596475\\\",\\\"name\\\":\\\"coca-cola\\\",\\\"category\\\":\\\"getraenke1\\\",\\\"price\\\":\\\"4.4900\\\",\\\"units\\\":1,\\\"rrp\\\":\\\"4.9900\\\",\\\"savingsPercent\\\":\\\"10.0000\\\",\\\"savingsAmount\\\":\\\"0.5000\\\",\\\"disturberType\\\":\\\"Rabatt\\\",\\\"listPosition\\\":\\\"1\\\",\\\"shoppable\\\":\\\"not_set\\\",\\\"promotion\\\":\\\"reduzierter Preis\\\"}\",\"linkHref\":\"/angebote/getraenke1/coca-cola\",\"detailLinkHref\":\"/angebote/getraenke1/coca-cola~mgnlArea=main~\",\"uuid\":\"6ecde256-a8ad-4e98-993a-aa5118596475\",\"primaryType\":\"offer\"},{\"title\":\"ORANGINA Limonade*\",\"type\":\"food\",\"quantity\":\"je 0,5 l\",\"lowestPrice30Days\":null,\"priceFrom\":false,\"price\":\"0.99\",\"actionPrice\":false,\"actionPriceFrom\":false,\"showOriginalPrice\":true,\"multiBuy\":false,\"bargainPrice\":false,\"originalPrice\":\"1.39\",\"originalPriceType\":\"uvp\",\"basePrice\":\"(1 l =  1.98)\",\"discount\":true,\"discountPercentage\":\"-28%\",\"onlyOnline\":false,\"alsoOnline\":false,\"imageRendition\":{\"tileXs\":\"https://cdn.penny.de/dam/jcr:48176f32-3e1c-40d1-a601-f84c9872113f/28274487.png?impolicy=penny&imwidth=100\",\"tileSm\":\"https://cdn.penny.de/dam/jcr:48176f32-3e1c-40d1-a601-f84c9872113f/28274487.png?impolicy=penny&imwidth=200\",\"tileMd\":\"https://cdn.penny.de/dam/jcr:48176f32-3e1c-40d1-a601-f84c9872113f/28274487.png?impolicy=penny&imwidth=400\",\"tileLg\":\"https://cdn.penny.de/dam/jcr:48176f32-3e1c-40d1-a601-f84c9872113f/28274487.png?impolicy=penny&imwidth=600\",\"tileXl\":\"https://cdn.penny.de/dam/jcr:48176f32-3e1c-40d1-a601-f84c9872113f/28274487.png?impolicy=penny&imwidth=800\",\"imageAlt\":\"ORANGINA Limonade* 0.99\",\"imageTitle\":\"ORANGINA Limonade* 0.99 (1 l =  1.98)\"},\"productData\":\"{\\\"id\\\":\\\"7ffa83ce-8b64-4ba9-8e21-2320becb4b0c\\\",\\\"name\\\":\\\"orangina-limonade\\\",\\\"category\\\":\\\"getraenke1\\\",\\\"price\\\":\\\"0.9900\\\",\\\"units\\\":1,\\\"rrp\\\":\\\"1.3900\\\",\\\"savingsPercent\\\":\\\"28.0000\\\",\\\"savingsAmount\\\":\\\"0.4000\\\",\\\"disturberType\\\":\\\"Rabatt\\\",\\\"listPosition\\\":\\\"2\\\",\\\"shoppable\\\":\\\"not_set\\\",\\\"pr"
+  },
+  {
+   "url": "https://www.penny.de/angebote",
+   "status": 200,
+   "finalUrl": "https://www.penny.de/angebote",
+   "type": "text/html;charset=UTF-8",
+   "length": 335007,
+   "rawFile": "diagnose/raw-4.txt",
+   "flags": {
+    "nextData": false,
+    "ldJson": false,
+    "nuxt": false,
+    "cloudflare": false,
+    "restPaths": [
+     "/.rest/market"
+    ],
+    "apiHosts": []
+   },
+   "snippets": [
+    "<!DOCTYPE html>\n<html xml:lang=\"de\" lang=\"de\" class=\"js-pending\" data-icon-sprite-url=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg\">\n<head>\n\t<script>\n\t\tperformance.mark('HEAD Start');\n\t</script>\n\n<meta charset=\"utf-8\"/>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1 maximum-scale=1\"/>\n<title>Angebote & Prospekt der Woche | PENNY.de</title>\n<meta name=\"description\" content=\"Immer auf dem laufenden mit den Angeboten von Penny im Prospekt der Woche. Klick dich rein und entdecke die besten Angebote in deinem Markt.\"/>\n<meta name=\"keywords\" content=\"\"/>\n\n\n  <link rel=\"canonical\" href=\"https://www.penny.de/angebote\"/>\n\n<link rel=\"preconnect\" href=\"//cdn.penny.de\" />\n<link rel=\"preconnect\" href=\"//rewedigital.sc.omtrdc.net\" />\n<link rel=\"dns-prefetch\" href=\"//cdn.penny.de\" />\n<link rel=\"dns-prefetch\" href=\"//rewedigital.sc.omtrdc.net\" />\n\n\t\t<link as=\"style\" href=\"/.resources/penny/webresources/css/main~2026-10-15-13-24-29-000~cach",
+    "t der woche';\n    window.pageData.page.type = 'handout';\n    window.pageData.page.hierarchy.push('prospekt der woche');\n  }\n</script>\n\n\n\n\n<div\n  class=\"site-header\"\n  data-js-component=\"site-header\"\n  data-market-api=\"/.rest/market\"\n>\n  <div>\n    <a class=\"btn btn--primary btn--lg btn--round t-bg--white btn__skip-to-main\"\n      data-js-component=\"button-ripple\"\n      data-css-component=\"button-ripple\"\n      data-js-ripple=\"true\"\n      aria-label=\"zum Hauptinhalt springen\"\n      href=\"#maincontent\"\n    >\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-big-arrow-up\"></use></svg>    </a>\n  </div>\n\n  <header class=\"site-header__container page-sector--overlap-next\">\n    <div class=\"site-header__logo\">\n      <a class=\"logo__link\" href=\"/\">\n<svg aria-hidden=\"true\" class=\"icon logo\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-logo-penny-white\"></use></svg>        <span class=\"logo__text l-visually-hidden\">Penny</span>\n      </a>\n    </div>\n\n\n\n\n<nav class=\"site-header__nav site-header__nav--desktop show-for-xlarge\" aria-label=\"Hauptnavigation\">\n\t\t<ul class=\"main-nav inline-list\" role=\"menubar\">\n        <li class=\"main-nav__item has-submenu\" role=\"none\">\n\n\n\n\n\t<!-- mainNav item -->\n\n<a\n  data-js-component=\"button-ripple\"\n  data-css-component=\"button-ripple\"\n  data-js-ripple=\"true\"\n  class=\"nav-item__link nav-item__btn active\"\n  href=\"/angebote/\"\n\tdata-href=\"#flyout-0\"\n\t\n\trole=\"menuitem",
+    "ss=\"nav-item__label\">Angebote</span>\n\n</a>\n\n\n\n          <div class=\"sub-nav__list-wrapper\">\n            <div class=\"sub-nav__header\">\n              <h3 class=\"sub-nav__title h4\">Hauptnavigation</h3>\n              <button aria-label=\"mainNavigation.closeButton.label\" class=\"btn btn--primary btn--md btn--round t-bg--white t-color--red sub-nav__close\"\n                      data-js-component=\"button-ripple\"\n                      data-css-component=\"button-ripple\"\n                      data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-close\"></use></svg>              </button>\n            </div>\n            <div class=\"sub-nav__list-container\">\n              <ul class=\"sub-nav__list inline-list\" role=\"menu\" aria-hidden=\"true\" aria-expanded=\"false\" aria-label=\"Angebote Untermenü\">\n                <li class=\"sub-nav__list-item nav-item\" role=\"none\">\n\n\n\n\n\t<!-- link item -->\n\n<a\n  data-js-component=\"button-ripple\"\n  data-css-component=\"button-ripple\"\n  data-js-ripple=\"true\"\n  class=\"nav-item__link  \"\n  href=\"/angebote/\"\n\tdata-href=\"/angebote\"\n\t\n\trole=\"menuitem\"\n\t\n\taria-haspopup=\"false\"\n>\n\t  <div class=\"sub-nav__wrapper wrapper__mobile--large wrapper__desktop--large has-btn--mobile has-btn--desktop\">\n\t    <div class=\"sub-nav__img-wrapper\">\n        <img\n          src=\"https://cdn.penny.de/dam/jcr:066b10cb-587e-4c51-8d0d-08aee6f4228a/Image_navi_angebote.png?impolicy=penny&imwidth=400\"\n          class",
+    "ss=\"nav-item__label\">Aktionen</span>\n\n</a>\n\n\n\n          <div class=\"sub-nav__list-wrapper\">\n            <div class=\"sub-nav__header\">\n              <h3 class=\"sub-nav__title h4\">Hauptnavigation</h3>\n              <button aria-label=\"mainNavigation.closeButton.label\" class=\"btn btn--primary btn--md btn--round t-bg--white t-color--red sub-nav__close\"\n                      data-js-component=\"button-ripple\"\n                      data-css-component=\"button-ripple\"\n                      data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-close\"></use></svg>              </button>\n            </div>\n            <div class=\"sub-nav__list-container\">\n              <ul class=\"sub-nav__list inline-list\" role=\"menu\" aria-hidden=\"true\" aria-expanded=\"false\" aria-label=\"Aktionen Untermenü\">\n                <li class=\"sub-nav__list-item nav-item\" role=\"none\">\n\n\n\n\n\t<!-- link item -->\n\n<a\n  data-js-component=\"button-ripple\"\n  data-css-component=\"button-ripple\"\n  data-js-ripple=\"true\"\n  class=\"nav-item__link  \"\n  href=\"/aktionen/\"\n\tdata-href=\"/aktionen\"\n\t\n\trole=\"menuitem\"\n\t\n\taria-haspopup=\"false\"\n>\n\t  <div class=\"sub-nav__wrapper wrapper__mobile--large wrapper__desktop--large has-btn--mobile has-btn--desktop\">\n\t    <div class=\"sub-nav__img-wrapper\">\n        <img\n          src=\"https://cdn.penny.de/dam/jcr:c2c64890-a73b-40fa-b375-b156c18ff56f/Image_navi_aktionen.png?impolicy=penny&imwidth=400\"\n          class",
+    "ass=\"nav-item__label\">Rezepte</span>\n\n</a>\n\n\n\n          <div class=\"sub-nav__list-wrapper\">\n            <div class=\"sub-nav__header\">\n              <h3 class=\"sub-nav__title h4\">Hauptnavigation</h3>\n              <button aria-label=\"mainNavigation.closeButton.label\" class=\"btn btn--primary btn--md btn--round t-bg--white t-color--red sub-nav__close\"\n                      data-js-component=\"button-ripple\"\n                      data-css-component=\"button-ripple\"\n                      data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-close\"></use></svg>              </button>\n            </div>\n            <div class=\"sub-nav__list-container\">\n              <ul class=\"sub-nav__list inline-list\" role=\"menu\" aria-hidden=\"true\" aria-expanded=\"false\" aria-label=\"Rezepte Untermenü\">\n                <li class=\"sub-nav__list-item nav-item\" role=\"none\">\n\n\n\n\n\t<!-- link item -->\n\n<a\n  data-js-component=\"button-ripple\"\n  data-css-component=\"button-ripple\"\n  data-js-ripple=\"true\"\n  class=\"nav-item__link  \"\n  href=\"/clever-kochen/rezepte-und-ernaehrung/\"\n\tdata-href=\"/clever-kochen/rezepte-und-ernaehrung\"\n\t\n\trole=\"menuitem\"\n\t\n\taria-haspopup=\"false\"\n>\n\t  <div class=\"sub-nav__wrapper wrapper__mobile--large wrapper__desktop--large has-btn--mobile has-btn--desktop\">\n\t    <div class=\"sub-nav__img-wrapper\">\n        <img\n          src=\"https://cdn.penny.de/dam/jcr:0c26f4b6-f9e7-4976-a17a-e9e1b53e07d3/Image_navi_c",
+    "ss=\"nav-item__label\">Angebote</span>\n\n</a>\n\n\n\n          <div class=\"sub-nav__list-wrapper\">\n            <div class=\"sub-nav__header\">\n              <h3 class=\"sub-nav__title h4\">Hauptnavigation</h3>\n              <button aria-label=\"mainNavigation.closeButton.label\" class=\"btn btn--primary btn--md btn--round t-bg--white t-color--red sub-nav__close\"\n                      data-js-component=\"button-ripple\"\n                      data-css-component=\"button-ripple\"\n                      data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-close\"></use></svg>              </button>\n            </div>\n            <div class=\"sub-nav__list-container\">\n              <ul class=\"sub-nav__list inline-list\" role=\"menu\" aria-hidden=\"true\" aria-expanded=\"false\" aria-label=\"Angebote Untermenü\">\n                <li class=\"sub-nav__list-item nav-item\" role=\"none\">\n\n\n\n\n\t<!-- link item -->\n\n<a\n  data-js-component=\"button-ripple\"\n  data-css-component=\"button-ripple\"\n  data-js-ripple=\"true\"\n  class=\"nav-item__link  \"\n  href=\"/angebote/\"\n\tdata-href=\"/angebote\"\n\t\n\trole=\"menuitem\"\n\t\n\taria-haspopup=\"false\"\n>\n\t  <div class=\"sub-nav__wrapper wrapper__mobile--large wrapper__desktop--large has-btn--mobile has-btn--desktop\">\n\t    <div class=\"sub-nav__img-wrapper\">\n        <img\n          src=\"https://cdn.penny.de/dam/jcr:066b10cb-587e-4c51-8d0d-08aee6f4228a/Image_navi_angebote.png?impolicy=penny&imwidth=400\"\n          class",
+    "ss=\"nav-item__label\">Aktionen</span>\n\n</a>\n\n\n\n          <div class=\"sub-nav__list-wrapper\">\n            <div class=\"sub-nav__header\">\n              <h3 class=\"sub-nav__title h4\">Hauptnavigation</h3>\n              <button aria-label=\"mainNavigation.closeButton.label\" class=\"btn btn--primary btn--md btn--round t-bg--white t-color--red sub-nav__close\"\n                      data-js-component=\"button-ripple\"\n                      data-css-component=\"button-ripple\"\n                      data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-close\"></use></svg>              </button>\n            </div>\n            <div class=\"sub-nav__list-container\">\n              <ul class=\"sub-nav__list inline-list\" role=\"menu\" aria-hidden=\"true\" aria-expanded=\"false\" aria-label=\"Aktionen Untermenü\">\n                <li class=\"sub-nav__list-item nav-item\" role=\"none\">\n\n\n\n\n\t<!-- link item -->\n\n<a\n  data-js-component=\"button-ripple\"\n  data-css-component=\"button-ripple\"\n  data-js-ripple=\"true\"\n  class=\"nav-item__link  \"\n  href=\"/aktionen/\"\n\tdata-href=\"/aktionen\"\n\t\n\trole=\"menuitem\"\n\t\n\taria-haspopup=\"false\"\n>\n\t  <div class=\"sub-nav__wrapper wrapper__mobile--large wrapper__desktop--large has-btn--mobile has-btn--desktop\">\n\t    <div class=\"sub-nav__img-wrapper\">\n        <img\n          src=\"https://cdn.penny.de/dam/jcr:c2c64890-a73b-40fa-b375-b156c18ff56f/Image_navi_aktionen.png?impolicy=penny&imwidth=400\"\n          class",
+    "ass=\"nav-item__label\">Rezepte</span>\n\n</a>\n\n\n\n          <div class=\"sub-nav__list-wrapper\">\n            <div class=\"sub-nav__header\">\n              <h3 class=\"sub-nav__title h4\">Hauptnavigation</h3>\n              <button aria-label=\"mainNavigation.closeButton.label\" class=\"btn btn--primary btn--md btn--round t-bg--white t-color--red sub-nav__close\"\n                      data-js-component=\"button-ripple\"\n                      data-css-component=\"button-ripple\"\n                      data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-close\"></use></svg>              </button>\n            </div>\n            <div class=\"sub-nav__list-container\">\n              <ul class=\"sub-nav__list inline-list\" role=\"menu\" aria-hidden=\"true\" aria-expanded=\"false\" aria-label=\"Rezepte Untermenü\">\n                <li class=\"sub-nav__list-item nav-item\" role=\"none\">\n\n\n\n\n\t<!-- link item -->\n\n<a\n  data-js-component=\"button-ripple\"\n  data-css-component=\"button-ripple\"\n  data-js-ripple=\"true\"\n  class=\"nav-item__link  \"\n  href=\"/clever-kochen/rezepte-und-ernaehrung/\"\n\tdata-href=\"/clever-kochen/rezepte-und-ernaehrung\"\n\t\n\trole=\"menuitem\"\n\t\n\taria-haspopup=\"false\"\n>\n\t  <div class=\"sub-nav__wrapper wrapper__mobile--large wrapper__desktop--large has-btn--mobile has-btn--desktop\">\n\t    <div class=\"sub-nav__img-wrapper\">\n        <img\n          src=\"https://cdn.penny.de/dam/jcr:0c26f4b6-f9e7-4976-a17a-e9e1b53e07d3/Image_navi_c",
+    "</div>\n\n    <div class=\"market-tile__select hidden\" data-market-select>\n      <h2 class=\"market-tile__hdln h4 t-color--grey-stone\">Markt wählen</h2>\n      <p class=\"market-tile__subline\">Alle Angebote sehen</p>\n      <button class=\"btn btn--primary btn--lg t-bg--red market-tile__btn-not-selected market-modal__open-btn\"\n              data-js-component=\"button-ripple\"\n              data-css-component=\"button-ripple\"\n              data-js-ripple=\"true\"\n              data-market-open-modal-btn>\n<svg aria-hidden=\"true\" class=\"icon icon--larger\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-market\"></use></svg>        Meinen Markt auswählen\n      </button>\n    </div>\n\n    <div class=\"market-tile__current hidden\" data-market-current>\n\n\n<div class=\"market-tile__status t-color--red skeleton skeleton--text\"\n     data-status-open=\"Bis 0000 geöffnet\"\n     data-status-closed=\"Geschlossen<span> - öffnet 0000</span>\"\n     data-status-closed-will-open=\"Öffnet um 0000\"\n     data-status-closed-text=\"Geschlossen\"\n     data-status-closed-until-monday=\"website.marketFinder.market.closedUntilMonday\"\n     data-status-closed-until-tomorrow=\"Geschlossen<span> - öffnet morgen 0000</span>\">\n<svg aria-hidden=\"true\" class=\"market-tile__status-icon icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-wall-clock\"></use></svg>  <span class=\"market-tile__status-text\" data-status-text>&nbsp;</span>\n</div>\n\n<div class=\"market-tile__status t-color",
+    "fnet morgen 0000</span>\">\n<svg aria-hidden=\"true\" class=\"market-tile__status-icon icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-wall-clock\"></use></svg>  <span class=\"market-tile__status-text\" data-status-text>&nbsp;</span>\n</div>\n\n<div class=\"market-tile__status t-color--red\"\n     data-status-closed-between=\"Geschlossen<span> {datefrom} - {dateto}</span>\"\n     data-status-closed-one-day=\"Geschlossen<span> am {datefrom}</span>\"\n     hidden>\n<svg aria-hidden=\"true\" class=\"market-tile__status-icon icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-wall-clock\"></use></svg>  <span class=\"market-tile__status-text\" data-status-text>&nbsp;</span>\n</div>\n\n        <a class=\"btn btn--tertiary btn--md t-color--red market-tile__btn-selected\"\n           data-js-component=\"button-ripple\"\n           data-css-component=\"button-ripple\"\n           data-js-ripple=\"true\"\n           href=\"/marktsuche\" data-market-info-link>\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-market\"></use></svg>          Markt anzeigen\n        </a>\n    </div>\n  </section>\n\n<div class=\"market-finder__search--zip\" data-js-component=\"modal-market-finder\" data-css-component=\"modal-market-finder|zip-search|market-tile|input-text|spinner\">\n  <div class=\"market-finder__search market-zip-search-app\"\n       data-rest-api=\"/.rest\"\n       data-input-zip-placeholder=\"\"\n       data-input-zip",
+    "ers initial-hash\" value=\"Als Prospekt\" aria-label=\"Als Prospekt\">\n\n<input type=\"radio\" id=\"current-week\" name=\"tab-weeks-input\" class=\"tab-input--weeks  d-none\" checked\n       data-week=\"current_week\" value=\"Diese Woche\" aria-label=\"Diese Woche\"\n>\n\n\n<div class=\"tabs__selection-area \">\n  <div class=\"tabs__selection--offers tabs__selection--group\">\n    <label class=\"tabs__item tabs__item--offers\" for=\"offers-input\" data-js-component=\"button-ripple\" data-css-component=\"button-ripple\" data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-offer-list\"></use></svg>      <span class=\"tabs__item-text\" aria-hidden=\"true\">Als Liste</span>\n    </label>\n    <label class=\"tabs__item tabs__item--offers\" for=\"handout-input\" data-js-component=\"button-ripple\" data-css-component=\"button-ripple\" data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-book\"></use></svg>      <span class=\"tabs__item-text\" aria-hidden=\"true\">Als Prospekt</span>\n      <span class=\"tabs__item-text-no-handout\">Für deinen Markt ist kein Prospekt vorhanden.</span>\n      <span class=\"btn btn--tertiary btn--md t-color--red tabs__item-handout-link\">Anderen wählen</span>\n    </label>\n    <div class=\"tabs__glider tabs__glider--offers\"></div>\n  </div>\n  <div class=\"tabs__selection--weeks tabs__selection--group\">\n    <label class=\"tabs__item tabs__item--weeks\" f",
+    "=\"tabs__item-text-no-handout\">Für deinen Markt ist kein Prospekt vorhanden.</span>\n      <span class=\"btn btn--tertiary btn--md t-color--red tabs__item-handout-link\">Anderen wählen</span>\n    </label>\n    <div class=\"tabs__glider tabs__glider--offers\"></div>\n  </div>\n  <div class=\"tabs__selection--weeks tabs__selection--group\">\n    <label class=\"tabs__item tabs__item--weeks\" for=\"current-week\" data-week=\"current\" data-js-component=\"button-ripple\" data-css-component=\"button-ripple\" data-js-ripple=\"true\">\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-calendar\"></use></svg>      <span class=\"tabs__item-text\" aria-hidden=\"true\">Diese Woche</span>\n    </label>\n      <span class=\"tabs__item tabs__item--message\">\n        <span>\n<svg aria-hidden=\"true\" class=\"icon\"><use  href=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg#icon-info-circle\"></use></svg>        </span>\n        <span>Ab Freitag siehst du hier die Angebote der nächsten Woche</span>\n      </span>\n  </div>\n</div>\n\n    <div class=\"tabs__content-area\" id=\"maincontent\">\n      <section class=\"tabs__content tabs__content--offers-handout tabs__content--offers t-bg--wild-sand \"\n               data-js-component=\"category-offers|notification-tile\"\n               data-js-component-priority=\"1\"\n               data-rest-uri=\"/.rest\"\n      >\n\n\n\n<template id=\"category-offers-menu-tpl\">\n  <span class=\"l-visually-hidden\" id=\"offer-category-dialog-desc\">D"
+   ],
+   "head": "<!DOCTYPE html>\n<html xml:lang=\"de\" lang=\"de\" class=\"js-pending\" data-icon-sprite-url=\"/.resources/penny/webresources/media/icon-sprite.51fa347e.svg\">\n<head>\n\t<script>\n\t\tperformance.mark('HEAD Start');\n\t</script>\n\n<meta charset=\"utf-8\"/>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1 maximum-scale=1\"/>\n<title>Angebote & Prospekt der Woche | PENNY.de</title>\n<meta name=\"description\" content=\"Immer auf dem laufenden mit den Angeboten von Penny im Prospekt der Woche. Klick dich rein und entdecke die besten Angebote in deinem Markt.\"/>\n<meta name=\"keywords\" content=\"\"/>\n\n\n  <link rel=\"canonical\" href=\"https://www.penny.de/angebote\"/>\n\n<link rel=\"preconnect\" href=\"//cdn.penny.de\" />\n<link rel=\"preconnect\" href=\"//rewedigital.sc.omtrdc.net\" />\n<link rel=\"dns-prefetch\" href=\"//cdn.penny.de\" />\n<link rel=\"dns-prefetch\" href=\"//rewedigital.sc.omtrdc.net\" />\n\n\t\t<link as=\"style\" href=\"/.resources/penny/webresources/css/main~2026-10-15-13-24-29-000~cache.css\" media=\"all\" rel=\"preload\"/>\n\t\t<link as=\"style\" href=\"/.resources/penny/webresources/css/index~2026-10-15-13-24-29-000~cache.css\" media=\"all\" rel=\"preload\"/>\n\n\n\n<link href=\"https://privacy-proxy.usercentrics.eu\" rel=\"preconnect\">\n<link as=\"script\" href=\"https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js\" rel=\"preload\">\n\n      <link href=\"/.resources/penny/webresources/js/index~2026-10-15-13-24-39-000~cache.js\" rel=\"modulepreload\"/>\n\n\t\t<link rel=\"stylesheet\" href=\"/.resources/penny/webresources/css/mai"
+  },
+  {
+   "url": "https://endpoints.leaflets.schwarz/robots.txt",
+   "status": 404,
+   "finalUrl": "https://endpoints.leaflets.schwarz/robots.txt",
+   "type": "text/html",
+   "length": 242,
+   "rawFile": "diagnose/raw-5.txt",
+   "flags": {
+    "nextData": false,
+    "ldJson": false,
+    "nuxt": false,
+    "cloudflare": false,
+    "restPaths": [],
+    "apiHosts": []
+   },
+   "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head><title>404 Not Found</title></head>\n<body>\n<h1 style='color:red'>Error 404: Not found :-(</h1>\n<p>I have no idea where that file is, sorry. Are you sure you typed in the correct URL?</p>\n</body>\n</html>\n"
+  },
+  {
+   "url": "https://endpoints.leaflets.schwarz/v4/flyer?flyer_identifier=aktionsprospekt-19-10-2026-24-10-2026-5aac13&region_id=0&region_code=0",
+   "status": 200,
+   "finalUrl": "https://endpoints.leaflets.schwarz/v4/flyer?flyer_identifier=aktionsprospekt-19-10-2026-24-10-2026-5aac13&region_id=0&region_code=0",
+   "type": "application/json",
+   "length": 370866,
+   "rawFile": "diagnose/raw-6.txt",
+   "flags": {
+    "nextData": false,
+    "ldJson": false,
+    "nuxt": false,
+    "cloudflare": false,
+    "restPaths": [],
+    "apiHosts": []
+   },
+   "jsonShape": {
+    "self": "string",
+    "version": "number",
+    "success": "boolean",
+    "message": "string",
+    "dateTime": "string",
+    "numberOfEntries": "number",
+    "warnings": [
+     "len=1",
+     "string"
+    ],
+    "flyer": {
+     "id": "string",
+     "name": "string",
+     "title": "string",
+     "locale": "string",
+     "clientLocale": "string",
+     "apiCountryCode": "string",
+     "countryCode": "string",
+     "category": "string",
+     "subcategory": "string",
+     "quitUrl": "string",
+     "homeUrl": "string",
+     "privacyUrl": "string",
+     "imprintUrl": "string",
+     "newsletterUrl": "string",
+     "isActive": "boolean",
+     "showProductDetails": "boolean",
+     "showProductLinks": "boolean",
+     "showRclAnimation": "boolean",
+     "showRecommendedProducts": "boolean",
+     "showNewsletter": "boolean",
+     "showNotificationCenter": "boolean",
+     "enableSharing": "boolean",
+     "enableDownload": "boolean",
+     "myAccount": "boolean",
+     "shoppingCart": "boolean",
+     "pdfUrl": "string",
+     "hiResPdfUrl": "string",
+     "hiResFileSize": "number",
+     "fileSize": "number",
+     "teasers": {
+      "teaser_666x475": "string",
+      "teaser_2020x1440": "string",
+      "teaser_w1010": "string"
+     },
+     "regions": [
+      "len=1",
+      {
+       "code": "string"
+      }
+     ],
+     "thumbnailUrl": "string",
+     "publicThumbnail": "string",
+     "flyerUrlAbsolute": "string",
+     "startDate": "string",
+     "endDate": "string",
+     "offerStartDate": "string",
+     "offerEndDate": "string",
+     "showLinks": "boolean",
+     "showTopics": "boolean"
+    }
+   },
+   "jsonSample": "{\"self\":\"v4/flyer?flyer_identifier=aktionsprospekt-19-10-2026-24-10-2026-5aac13&region_id=0\",\"version\":4,\"success\":true,\"message\":\"Requested Flyer found.\",\"dateTime\":\"2026-10-19T08:40:31+00:00\",\"numberOfEntries\":1,\"warnings\":[\"The request contains some unused filter attributes: region_code.\"],\"flyer\":{\"id\":\"01a12f81-2825-7240-a991-dfbcdfdb00c3\",\"name\":\"Aktionsprospekt\",\"title\":\"19.10.2026 \\u2013 24.10.2026\",\"locale\":\"de-DE\",\"clientLocale\":\"lidl/de-DE\",\"apiCountryCode\":\"DE\",\"countryCode\":\"DE\",\"category\":\"Filial-Angebote\",\"subcategory\":\"Unsere Aktionsprospekte\",\"quitUrl\":\"https://www.lidl.de/c/online-prospekte/s10005610\",\"homeUrl\":\"https://www.lidl.de\",\"privacyUrl\":\"https://www.lidl.de/c/datenschutz/s10007528\",\"imprintUrl\":\"https://www.lidl.de/c/impressum/s10005238\",\"newsletterUrl\":\"https://www.lidl.de/de/newsletter?utm_source=pageflip&utm_medium=intern&utm_campaign=newsletter_banner\",\"isActive\":true,\"showProductDetails\":true,\"showProductLinks\":true,\"showRclAnimation\":true,\"showRecommendedProducts\":false,\"showNewsletter\":false,\"showNotificationCenter\":true,\"enableSharing\":true,\"enableDownload\":false,\"myAccount\":true,\"shoppingCart\":true,\"pdfUrl\":\"https://assets.leaflets.schwarz/leaflets/pdfs/01a12f81-2825-7240-a991-dfbcdfdb00c3/Aktionsprospekt-19-10-2026-24-10-2026-01.pdf\",\"hiResPdfUrl\":\"https://assets.leaflets.schwarz/leaflets/pdfs/01a12f81-2825-7240-a991-dfbcdfdb00c3/Aktionsprospekt-19-10-2026-24-10-2026-01.pdf\",\"hiResFileSize\":94780056,\"fileSize\":94780056,\"teasers\":{\"teaser_666x475\":\"https://imgproxy.leaflets.schwarz/bOyZl38qAW1g-D1w4zyurX8AjuGLTWeKmO8kdVUT9U8/rs:fill:666:475:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTJmODEtMjgyNS03MjQwLWE5OTEtZGZiY2RmZGIwMGMzL3BhZ2UtMDFfMDllOTM4ZDIxMGUxZTE4ZjU1MDRkYjUwYWJjNzQzNGYucG5n.jpg\",\"teaser_2020x1440\":\"https://imgproxy.leaflets.schwarz/3AnxCQocrGQQFRVXj0MCssEGPs9g9zos3iQJRn71dW8/rs:fill:2020:1440:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTJmODEtMjgyNS03MjQwLWE5OTEtZGZiY2RmZGIwMGMzL3BhZ2UtMDFfMDllOTM4ZDIxMGUxZTE4ZjU1MDRkYjUwYWJjNzQzNGYucG5n.jpg\",\"teaser_w1010\":\"https://imgproxy.leaflets.schwarz/d7496pX8OwL0LUicfugSz56DYsrtV3IkJjAoJTmdOac/rs:fit:1010:0:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTJmODEtMjgyNS03MjQwLWE5OTEtZGZiY2RmZGIwMGMzL3BhZ2UtMDFfMDllOTM4ZDIxMGUxZTE4ZjU1MDRkYjUwYWJjNzQzNGYucG5n.jpg\"},\"regions\":[{\"code\":\"0\"}],\"thumbnailUrl\":\"https://imgproxy.leaflets.schwarz/PCm0u6r7gWaf7RJmRf-bP8hsemveeza0oeW8Q1CyodQ/rs:fit:400:400:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTJmODEtMjgyNS03MjQwLWE5OTEtZGZiY2RmZGIwMGMzL3BhZ2UtMDFfMDllOTM4ZDIxMGUxZTE4ZjU1MDRkYjUwYWJjNzQzNGYucG5n.jpg\",\"publicThumbnail\":\"https://imgproxy.leaflets.schwarz/PCm0u6r7gWaf7RJmRf-bP8hsemveeza0oeW8Q1CyodQ/rs:fit:400:400:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMTJmODEtMjgyNS03MjQwLWE5OTEtZGZiY2RmZGIwMGMzL3BhZ2UtMDFfMDllOTM4ZDIxMGUxZTE4ZjU1MDRkYjUwYWJjNzQzNGYucG5n.jpg\",\"flyerUrlAbsolute\":\"https://www.lidl.de/l/prospekte/aktionsprospekt-19-10-2026-24-10-2026-5aac13/ar/0?_ab=1&lf=HHZ\",\"startDate\":\"2026-10-18\",\"endDate\":\"2026-10-24\",\"offerStartDate\":"
+  },
+  {
+   "url": "https://www.lidl.de/c/online-prospekte/s10005610",
+   "error": "fetch failed"
+  }
+ ]
+}
