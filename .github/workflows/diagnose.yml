@@ -1,0 +1,28 @@
+name: Diagnose bronnen (ontwikkeling)
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'URL-lijst (één per regel)'
+        required: true
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/diagnose.mjs
+        env:
+          DIAG_URLS: ${{ inputs.urls }}
+      - name: Rapport naar branch 'diagnose'
+        run: |
+          git config user.name "frisdrank-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B diagnose
+          git add -f diagnose/report.json
+          git commit -m "Diagnoserapport" -q
+          git push -f origin diagnose
