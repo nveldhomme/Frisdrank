@@ -4,20 +4,22 @@ Stand: 19 oktober 2026. De app toont zelf per bron de actuele status (tabblad **
 
 ## Overzicht
 
-| Keten | Filialen in regio | Automatisch? | Bron | Niveau | Opmerking |
-|---|---|---|---|---|---|
-| **EDEKA** | 17 (Emmerich, Kleve, Goch, Rees, Bocholt, Rhede) | **Ja – werkt** | Officiële aanbiedingen-API van edeka.de, per filiaalnummer | Per filiaal | Structuur gecontroleerd; echte lokale aanbiedingen. Startdatum wordt niet altijd meegegeven (dan “startdatum niet vermeld”). EDEKA Kusenberg Goch nog zonder filiaalnummer. |
-| **REWE** | 8 | **Ja** | rewe.de/angebote/nationale-angebote/… (robots.txt staat deze paden expliciet toe) | Landelijk | Alleen de landelijke folder, niet per filiaal bevestigd. **Eerste live run (19-10-2026): REWE weigert verzoeken vanaf de servers van GitHub (HTTP 403).** Dat wordt niet omzeild. De koppeling blijft aan staan (kost niets en werkt mogelijk later wel), maar reken voor REWE voorlopig op handmatige invoer. |
-| **Kaufland** | 5 | Nee | — | — | Website toont een Cloudflare-botcontrole. Niet omzeild. Handmatige invoer. |
-| **Lidl** | 10 | Nee | — | — | Online folder bevat productnamen maar geen prijzen in machineleesbare vorm. Handmatige invoer. |
-| **Netto** | 18 | Nee | — | — | Bot-bescherming en robots.txt sluit de data-endpoints uit. Handmatige invoer. |
-| **ALDI SÜD** | 13 | Nog niet | — | — | Er bestaat een product-API, maar het dataformaat kon niet worden geverifieerd. Liever geen koppeling op basis van gegokte velden. Kandidaat voor een volgende versie. |
-| **PENNY** | 5 | Nog niet | — | — | Aanbiedingen per markt via JavaScript; formaat niet geverifieerd. Kandidaat voor een volgende versie. |
-| **trinkgut** | 5 | Nee | — | — | Drankenspeciaalzaak; niet onderzocht. Handmatig. |
-| **Getränke Hoffmann** | 1 | Nee | — | — | Handmatig. |
-| **K+K** | 1 (Isselburg) | Nee | — | — | Handmatig. |
+| Keten | Filialen in regio | Hoe | Bron | Niveau |
+|---|---|---|---|---|
+| **EDEKA** | 17 | **Automatisch** (maandag ~06:00) | Officiële aanbiedingen-API per filiaal | Per filiaal |
+| **Kaufland** | 5 | **Automatisch** | Weekfolder op filiale.kaufland.de (deze + volgende week), incl. Kaufland Card-prijzen | Standaardfolder (zonder filiaalkeuze) |
+| **ALDI SÜD** | 13 | **Automatisch** | Officiële product-API, alleen actieproducten; ALDI noemt geen einddatum ("zolang de voorraad strekt") | Landelijk |
+| **PENNY** | 7 | **Automatisch** | penny.de per verkoopregio (onze filialen: 15A-09-33 en Rhede 15A-10-31), incl. app-couponprijzen | Per regio = per filiaal |
+| **Netto** | 18 | **Wekelijkse folderscan** (maandag ~07:15) | Folderoverzichten (kaufDA/meinprospekt) | Landelijk, regionaal kan afwijken |
+| **Lidl** | 10 | **Wekelijkse folderscan** | Folderoverzichten en dealsites (Lidl Plus-voorwaarden) | Landelijk |
+| **REWE** | 8 | Koppeling aan, maar geblokkeerd (HTTP 403) → **folderscan** | rewe.de / folderoverzichten | Landelijk |
+| **trinkgut, Getränke Hoffmann** | 6 | **Wekelijkse folderscan** (als er iets te vinden is) | Folderoverzichten | Per filiaal/landelijk |
 
-Alle filialen zijn bevestigd via EDEKA's eigen filiaalzoeker of via Google Maps (zie `config/stores.json`, veld `confirmedBy`). In het zoekgebied zitten ALDI SÜD-filialen (geen ALDI Nord).
+Waarom niet alles automatisch: Netto toont aanbiedingen alleen na filiaalkeuze en sluit de data-endpoints uit in robots.txt; Lidl publiceert de folderprijzen niet als data en weigert GitHub-servers wisselend; REWE weigert GitHub-servers. Dat wordt niet omzeild.
+
+De **wekelijkse folderscan** is een geplande Claude-taak die de folders leest, alleen aanbiedingen met bekende prijs en periode overneemt (formaat soms afgeleid uit de literprijs, dat staat dan bij de voorwaarden), verlopen regels opruimt en `data/manual-offers.csv` bijwerkt.
+
+Alle filialen zijn bevestigd via EDEKA's eigen filiaalzoeker of via Google Maps (zie `config/stores.json`, veld `confirmedBy`). In het zoekgebied zitten ALDI SÜD-filialen (geen ALDI Nord). PENNY-filialen en hun verkoopregio komen uit PENNY's eigen filialenlijst.
 
 ## Aanbiedingenplatforms
 

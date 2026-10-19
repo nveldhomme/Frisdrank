@@ -71,7 +71,7 @@ npm run serve                  # open http://localhost:8080 (demo: http://localh
 
 ## Handmatig aanbiedingen invoeren
 
-Voor Kaufland, Lidl, Netto, ALDI SÜD, PENNY en drankenzaken is er (nog) geen betrouwbare automatische bron. Zie je een goede aanbieding in de folder of app, voeg dan een regel toe aan `data/manual-offers.csv`. Dat kan direct op GitHub: open het bestand → potloodje → regel toevoegen → *Commit changes*. De site wordt dan automatisch opnieuw gepubliceerd.
+Voor Lidl, Netto, REWE en drankenzaken is er geen automatische bron; een geplande Claude-taak vult deze elke maandag aan (zie BRONNEN.md). Je kunt ook zelf regels toevoegen. Zie je een goede aanbieding in de folder of app, voeg dan een regel toe aan `data/manual-offers.csv`. Dat kan direct op GitHub: open het bestand → potloodje → regel toevoegen → *Commit changes*. De site wordt dan automatisch opnieuw gepubliceerd.
 
 Scheidingsteken is `;`, decimalen mogen met komma. Voorbeeld:
 
