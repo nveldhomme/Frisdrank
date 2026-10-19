@@ -1,0 +1,506 @@
+{
+ "schemaVersion": 1,
+ "isDemo": true,
+ "generatedAt": "2026-10-19T08:31:26.019Z",
+ "lastSuccessfulUpdate": null,
+ "sources": [
+  {
+   "id": "demo",
+   "label": "DEMONSTRATIEGEGEVENS (verzonnen)",
+   "chain": "*",
+   "chainName": "Demo",
+   "type": "demo",
+   "scope": "mixed",
+   "status": "manual",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "message": "Verzonnen prijzen, alleen voor ontwikkeling.",
+   "offerCount": 11
+  }
+ ],
+ "offers": [
+  {
+   "id": "demo-3b12a3fdf881",
+   "sourceId": "demo",
+   "chain": "kaufland",
+   "chainName": "Kaufland",
+   "scope": "store",
+   "storeIds": [
+    "kaufland-emmerich"
+   ],
+   "category": "frisdrank",
+   "brand": "Coca-Cola",
+   "product": "Coca-Cola (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Original"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.49,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.018Z",
+   "stale": false,
+   "unitPrice": 1.49,
+   "unitPriceExact": 1.49,
+   "pricePerLiter": 0.75,
+   "pricePerLiterExact": 0.745,
+   "totalLiters": 2
+  },
+  {
+   "id": "demo-e0eb7f92cbee",
+   "sourceId": "demo",
+   "chain": "kaufland",
+   "chainName": "Kaufland",
+   "scope": "store",
+   "storeIds": [
+    "kaufland-emmerich"
+   ],
+   "category": "frisdrank",
+   "brand": "Coca-Cola",
+   "product": "Coca-Cola (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Zero / suikervrij"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "zero"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.49,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 1.49,
+   "unitPriceExact": 1.49,
+   "pricePerLiter": 0.75,
+   "pricePerLiterExact": 0.745,
+   "totalLiters": 2
+  },
+  {
+   "id": "demo-89d3d1ccbc0f",
+   "sourceId": "demo",
+   "chain": "lidl",
+   "chainName": "Lidl",
+   "scope": "national",
+   "storeIds": [],
+   "category": "frisdrank",
+   "brand": "Pepsi",
+   "product": "Pepsi (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Original"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.29,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": true,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 1.29,
+   "unitPriceExact": 1.29,
+   "pricePerLiter": 0.65,
+   "pricePerLiterExact": 0.645,
+   "totalLiters": 2
+  },
+  {
+   "id": "demo-b2696ae335c9",
+   "sourceId": "demo",
+   "chain": "edeka",
+   "chainName": "EDEKA",
+   "scope": "store",
+   "storeIds": [
+    "edeka-12096"
+   ],
+   "category": "frisdrank",
+   "brand": "Fanta",
+   "product": "Fanta (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Orange"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.39,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 1.39,
+   "unitPriceExact": 1.39,
+   "pricePerLiter": 0.7,
+   "pricePerLiterExact": 0.695,
+   "totalLiters": 2
+  },
+  {
+   "id": "demo-28d671c98f3b",
+   "sourceId": "demo",
+   "chain": "netto",
+   "chainName": "Netto Marken-Discount",
+   "scope": "store",
+   "storeIds": [
+    "netto-kleve-wiesenstr"
+   ],
+   "category": "frisdrank",
+   "brand": "Coca-Cola",
+   "product": "Coca-Cola (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Original"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.59,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": 6,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 1.59,
+   "unitPriceExact": 1.59,
+   "pricePerLiter": 0.8,
+   "pricePerLiterExact": 0.795,
+   "totalLiters": 2
+  },
+  {
+   "id": "demo-c21d7fbf0c3c",
+   "sourceId": "demo",
+   "chain": "rewe",
+   "chainName": "REWE",
+   "scope": "national",
+   "storeIds": [],
+   "category": "frisdrank",
+   "brand": "Coca-Cola",
+   "product": "Coca-Cola (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Original"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 1.25,
+   "unitsPerPack": 1,
+   "packPrice": 1.11,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 1.11,
+   "unitPriceExact": 1.11,
+   "pricePerLiter": 0.89,
+   "pricePerLiterExact": 0.8880000000000001,
+   "totalLiters": 1.25
+  },
+  {
+   "id": "demo-2fe4c7493be5",
+   "sourceId": "demo",
+   "chain": "lidl",
+   "chainName": "Lidl",
+   "scope": "national",
+   "storeIds": [],
+   "category": "energy",
+   "brand": "Monster Energy",
+   "product": "Monster Energy (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Original"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "blik",
+   "unitVolumeL": 0.5,
+   "unitsPerPack": 4,
+   "packPrice": 4.44,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 1.11,
+   "unitPriceExact": 1.11,
+   "pricePerLiter": 2.22,
+   "pricePerLiterExact": 2.22,
+   "totalLiters": 2
+  },
+  {
+   "id": "demo-091d07afacc2",
+   "sourceId": "demo",
+   "chain": "aldi-sued",
+   "chainName": "ALDI SÜD",
+   "scope": "national",
+   "storeIds": [],
+   "category": "energy",
+   "brand": "Monster Energy",
+   "product": "Monster Energy (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Ultra"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "zero"
+   ],
+   "packType": "blik",
+   "unitVolumeL": 0.5,
+   "unitsPerPack": 1,
+   "packPrice": 1.19,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 1.19,
+   "unitPriceExact": 1.19,
+   "pricePerLiter": 2.38,
+   "pricePerLiterExact": 2.38,
+   "totalLiters": 0.5
+  },
+  {
+   "id": "demo-fec7a7d29bdd",
+   "sourceId": "demo",
+   "chain": "kaufland",
+   "chainName": "Kaufland",
+   "scope": "store",
+   "storeIds": [
+    "kaufland-kleve-flutstr"
+   ],
+   "category": "energy",
+   "brand": "Red Bull",
+   "product": "Red Bull (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Original"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "blik",
+   "unitVolumeL": 0.25,
+   "unitsPerPack": 4,
+   "packPrice": 3.79,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": true,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 0.95,
+   "unitPriceExact": 0.9475,
+   "pricePerLiter": 3.79,
+   "pricePerLiterExact": 3.79,
+   "totalLiters": 1
+  },
+  {
+   "id": "demo-af051ea21eda",
+   "sourceId": "demo",
+   "chain": "rewe",
+   "chainName": "REWE",
+   "scope": "national",
+   "storeIds": [],
+   "category": "energy",
+   "brand": "Red Bull",
+   "product": "Red Bull (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [],
+   "variantsOpen": true,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular",
+    "zero"
+   ],
+   "packType": "blik",
+   "unitVolumeL": 0.25,
+   "unitsPerPack": 1,
+   "packPrice": 0.99,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-18",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 0.99,
+   "unitPriceExact": 0.99,
+   "pricePerLiter": 3.96,
+   "pricePerLiterExact": 3.96,
+   "totalLiters": 0.25
+  },
+  {
+   "id": "demo-bb2532d7279e",
+   "sourceId": "demo",
+   "chain": "edeka",
+   "chainName": "EDEKA",
+   "scope": "store",
+   "storeIds": [
+    "edeka-12435"
+   ],
+   "category": "energy",
+   "brand": "Red Bull",
+   "product": "Red Bull (DEMO)",
+   "description": "Verzonnen voorbeeld",
+   "variants": [
+    "Original"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "blik",
+   "unitVolumeL": 0.473,
+   "unitsPerPack": 1,
+   "packPrice": 1.69,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-25",
+   "validTo": "2026-10-30",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": []
+   },
+   "sourceUrl": "https://example.invalid/demo",
+   "checkedAt": "2026-10-19T08:31:26.019Z",
+   "stale": false,
+   "unitPrice": 1.69,
+   "unitPriceExact": 1.69,
+   "pricePerLiter": 3.57,
+   "pricePerLiterExact": 3.572938689217759,
+   "totalLiters": 0.473
+  }
+ ]
+}

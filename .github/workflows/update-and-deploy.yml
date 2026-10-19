@@ -1,0 +1,88 @@
+name: Aanbiedingen bijwerken en publiceren
+
+on:
+  # Elke maandag rond 06:00 Nederlandse tijd. Het tijdzoneveld vangt zomer-/wintertijd op.
+  # Minuut 47 i.p.v. :00 omdat GitHub het hele uur het drukst is (minder vertraging).
+  # Let op: GitHub garandeert geen exact tijdstip; vertraging van 15-60 minuten komt voor.
+  schedule:
+    - cron: '47 5 * * 1'
+      timezone: 'Europe/Amsterdam'
+  # Handmatig starten: Actions > "Aanbiedingen bijwerken en publiceren" > Run workflow
+  workflow_dispatch:
+  # Bij elke wijziging in de code of handmatige aanbiedingen: testen en opnieuw publiceren
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # gegevens terugschrijven naar de repository
+  pages: write      # publiceren naar GitHub Pages
+  id-token: write
+
+concurrency:
+  group: aanbiedingen
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Controles op prijsberekeningen, multipacks, statiegeld, datums en sortering
+        run: npm test
+
+  collect:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Bij een push worden alleen de handmatige aanbiedingen opnieuw ingelezen (zie stap hieronder)
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Aanbiedingen verzamelen
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            # Bij een push geen websites bevragen; wel handmatige invoer verwerken.
+            node scripts/collect.mjs --manual-only
+          else
+            node scripts/collect.mjs
+          fi
+      - name: Gegevens opslaan in de repository
+        run: |
+          git config user.name "frisdrank-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/offers.json
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen in de gegevens."
+          else
+            git commit -m "Aanbiedingen bijgewerkt ($(date -u +%Y-%m-%d))"
+            git pull --rebase
+            git push
+          fi
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # inclusief de zojuist opgeslagen gegevens
+      - name: Site samenstellen
+        run: |
+          mkdir _site
+          cp -r index.html assets data config _site/
+          rm -f _site/data/manual-offers.csv
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

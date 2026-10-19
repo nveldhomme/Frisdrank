@@ -1,0 +1,14 @@
+# Handmatige aanbiedingen. Scheidingsteken: puntkomma (;). Decimalen met komma of punt.
+# Regels die met # beginnen worden genegeerd. Zie README, hoofdstuk "Handmatig aanbiedingen invoeren".
+# filialen: filiaal-id's uit config/stores.json (komma-gescheiden) of "landelijk".
+# smaak: bijv. "Original", "Zero", "Mango Loco", of "divers" als de folder "versch. Sorten" zegt.
+# statiegeld_per_eenheid: leeg laten als het niet in de folder staat (bij blikjes wordt dan € 0,25 aangenomen en als 'afgeleid' gemarkeerd).
+keten;filialen;merk;product;smaak;suikervrij;verpakking;inhoud_l;aantal_per_verpakking;prijs_verpakking;statiegeld_per_eenheid;geldig_van;geldig_tot;klantenkaart;app_coupon;min_aantal;max_aantal;voorwaarden;bron_url;gecontroleerd_op
+rewe;landelijk;Red Bull;Red Bull Energy Drink;divers;;blik;0,25;1;0,99;0,25;2026-10-19;2026-10-25;nee;nee;;;Landelijke REWE-folder, "in fast allen Märkten";https://www.rewe.de/angebote/nationale-angebote/alkoholfreie-getraenke/;2026-10-19
+rewe;landelijk;Coca-Cola;Coca-Cola;divers;;fles;1,25;1;1,11;0,25;2026-10-19;2026-10-25;nee;nee;;;Landelijke REWE-folder, "in fast allen Märkten";https://www.rewe.de/angebote/nationale-angebote/alkoholfreie-getraenke/;2026-10-19
+edeka;edeka-12096;Coca-Cola;Coca-Cola, Fanta, Sprite;divers;;blik;0,33;1;0,79;0,25;;2026-10-24;nee;nee;;;"Coca-Cola, Fanta, Sprite und weitere Sorten" – startdatum niet vermeld;https://www.edeka.de/eh/angebote.jsp;2026-10-19
+edeka;edeka-12096;Coca-Cola;Coca-Cola, Fanta, Sprite;divers;;blik;0,5;1;0,79;0,25;;2026-10-24;nee;nee;;;"Coca-Cola, Fanta, Sprite und weitere Sorten" – startdatum niet vermeld;https://www.edeka.de/eh/angebote.jsp;2026-10-19
+edeka;edeka-12096;Fanta;Coca-Cola, Fanta, Sprite;divers;;blik;0,33;1;0,79;0,25;;2026-10-24;nee;nee;;;"Coca-Cola, Fanta, Sprite und weitere Sorten" – startdatum niet vermeld;https://www.edeka.de/eh/angebote.jsp;2026-10-19
+edeka;edeka-12096;Fanta;Coca-Cola, Fanta, Sprite;divers;;blik;0,5;1;0,79;0,25;;2026-10-24;nee;nee;;;"Coca-Cola, Fanta, Sprite und weitere Sorten" – startdatum niet vermeld;https://www.edeka.de/eh/angebote.jsp;2026-10-19
+edeka;edeka-12096;Sprite;Coca-Cola, Fanta, Sprite;divers;;blik;0,33;1;0,79;0,25;;2026-10-24;nee;nee;;;"Coca-Cola, Fanta, Sprite und weitere Sorten" – startdatum niet vermeld;https://www.edeka.de/eh/angebote.jsp;2026-10-19
+edeka;edeka-12096;Sprite;Coca-Cola, Fanta, Sprite;divers;;blik;0,5;1;0,79;0,25;;2026-10-24;nee;nee;;;"Coca-Cola, Fanta, Sprite und weitere Sorten" – startdatum niet vermeld;https://www.edeka.de/eh/angebote.jsp;2026-10-19

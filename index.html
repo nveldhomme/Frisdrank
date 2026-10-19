@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Frisdrank Radar</title>
+  <meta name="description" content="Frisdrankaanbiedingen in de Duitse grensstreek vergelijken en een boodschappenlijst per supermarkt maken.">
+  <meta name="theme-color" content="#14532d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314532d'/%3E%3Cpath d='M24 10h16v8l4 8v28a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4V26l4-8z' fill='%23fff'/%3E%3Crect x='20' y='32' width='24' height='12' fill='%23f59e0b'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <div>
+          <h1>Frisdrank Radar</h1>
+          <p class="sub">Aanbiedingen in de Duitse grensstreek</p>
+        </div>
+      </div>
+      <div id="update-status" class="update-status" aria-live="polite">Gegevens laden…</div>
+    </div>
+    <div id="demo-banner" class="demo-banner" hidden>DEMO — verzonnen prijzen, alleen voor ontwikkeling. Dit zijn géén echte aanbiedingen.</div>
+    <nav class="tabs" role="tablist" aria-label="Weergaven">
+      <button role="tab" data-tab="home" aria-selected="true">Goedkoopst</button>
+      <button role="tab" data-tab="product">Per product</button>
+      <button role="tab" data-tab="store">Per winkel</button>
+      <button role="tab" data-tab="list">Lijst <span id="list-count" class="count" hidden>0</span></button>
+      <button role="tab" data-tab="sources">Bronnen</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="controls" id="controls">
+      <div class="control-row">
+        <label class="date-pick">
+          <span>Winkeldatum</span>
+          <input type="date" id="f-date">
+        </label>
+        <button class="btn ghost" id="toggle-filters" aria-expanded="false" aria-controls="filters">Filters <span id="filter-badge" class="count" hidden>0</span></button>
+      </div>
+      <div id="filters" class="filters" hidden>
+        <fieldset><legend>Plaats</legend><div class="chips" id="f-cities"></div></fieldset>
+        <fieldset><legend>Supermarkt</legend><div class="chips" id="f-chains"></div></fieldset>
+        <fieldset><legend>Merk</legend><div class="chips" id="f-brands"></div></fieldset>
+        <div class="grid3">
+          <label>Soort
+            <select id="f-category"><option value="alle">Alles</option><option value="frisdrank">Frisdrank</option><option value="energy">Energydrank</option></select>
+          </label>
+          <label>Regular / zero
+            <select id="f-sugar"><option value="alle">Beide</option><option value="regular">Regular</option><option value="zero">Zero / suikervrij</option></select>
+          </label>
+          <label>Verpakking
+            <select id="f-pack"><option value="alle">Alles</option><option value="los">Los (1 stuk)</option><option value="multipack">Multipack</option></select>
+          </label>
+        </div>
+        <label class="check"><input type="checkbox" id="f-noconditions"> Alleen aanbiedingen zonder klantenkaart of app-coupon</label>
+        <label class="check"><input type="checkbox" id="f-othersizes"> Andere flesformaten tonen (niet 2 liter)</label>
+        <button class="btn link" id="reset-filters">Filters wissen</button>
+      </div>
+    </section>
+
+    <section id="view-home" class="view" role="tabpanel"></section>
+    <section id="view-product" class="view" role="tabpanel" hidden></section>
+    <section id="view-store" class="view" role="tabpanel" hidden></section>
+    <section id="view-list" class="view" role="tabpanel" hidden></section>
+    <section id="view-sources" class="view" role="tabpanel" hidden></section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <footer class="foot">
+    <p>Prijzen komen uit folders en websites van de winkels. Controleer altijd de prijs in de winkel. Brandstofkosten en reistijd worden niet meegerekend.</p>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

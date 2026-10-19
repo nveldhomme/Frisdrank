@@ -1,0 +1,35 @@
+{
+  "_info": "Eén regel per bron. 'adapter' verwijst naar scripts/adapters/<adapter>.mjs. Een bron die faalt, raakt de andere bronnen niet.",
+  "userAgent": "FrisdrankRadar/1.0 (persoonlijke prijsvergelijking; wekelijkse controle)",
+  "sources": [
+    {
+      "id": "edeka",
+      "chain": "edeka",
+      "label": "EDEKA – aanbiedingen per filiaal",
+      "adapter": "edeka",
+      "type": "officiële API (edeka.de)",
+      "scope": "store",
+      "enabled": true,
+      "url": "https://www.edeka.de/eh/angebote.jsp"
+    },
+    {
+      "id": "rewe-nationaal",
+      "chain": "rewe",
+      "label": "REWE – landelijke aanbiedingen",
+      "adapter": "rewe",
+      "type": "officiële website (rewe.de), door robots.txt toegestaan",
+      "scope": "national",
+      "enabled": true,
+      "url": "https://www.rewe.de/angebote/nationale-angebote/",
+      "pages": ["alkoholfreie-getraenke/", "topangebote/", "thema-der-woche/", "rewe-bonus-produkte/"]
+    },
+    { "id": "kaufland", "chain": "kaufland", "label": "Kaufland", "adapter": "unsupported", "type": "geen automatische bron", "scope": "store", "enabled": true, "url": "https://filiale.kaufland.de/angebote/aktuelle-woche.html", "reason": "Website toont een Cloudflare-botcontrole. Die wordt niet omzeild. Gebruik handmatige invoer." },
+    { "id": "lidl", "chain": "lidl", "label": "Lidl", "adapter": "unsupported", "type": "geen automatische bron", "scope": "national", "enabled": true, "url": "https://www.lidl.de/c/online-prospekte/s10005610", "reason": "De online folder bevat productnamen maar geen prijzen in machineleesbare vorm. Gebruik handmatige invoer." },
+    { "id": "netto", "chain": "netto", "label": "Netto Marken-Discount", "adapter": "unsupported", "type": "geen automatische bron", "scope": "store", "enabled": true, "url": "https://www.netto-online.de/filialangebote", "reason": "Bot-bescherming (Akamai) en robots.txt verbiedt de data-endpoints. Gebruik handmatige invoer." },
+    { "id": "aldi-sued", "chain": "aldi-sued", "label": "ALDI SÜD", "adapter": "unsupported", "type": "nog niet geverifieerd", "scope": "national", "enabled": true, "url": "https://www.aldi-sued.de/de/angebote.html", "reason": "Er bestaat een product-API, maar het dataformaat kon nog niet worden geverifieerd. Voorlopig handmatige invoer; zie README om een koppeling toe te voegen." },
+    { "id": "penny", "chain": "penny", "label": "PENNY", "adapter": "unsupported", "type": "nog niet geverifieerd", "scope": "store", "enabled": true, "url": "https://www.penny.de/angebote", "reason": "Aanbiedingen worden per markt via JavaScript geladen; dataformaat nog niet geverifieerd. Voorlopig handmatige invoer." },
+    { "id": "trinkgut", "chain": "trinkgut", "label": "trinkgut", "adapter": "unsupported", "type": "geen automatische bron", "scope": "store", "enabled": true, "url": "https://www.trinkgut.de/angebote/", "reason": "Niet onderzocht voor automatische verwerking. Handmatige invoer." },
+    { "id": "getraenke-hoffmann", "chain": "getraenke-hoffmann", "label": "Getränke Hoffmann", "adapter": "unsupported", "type": "geen automatische bron", "scope": "store", "enabled": true, "url": "https://www.getraenke-hoffmann.de/angebote", "reason": "Niet onderzocht voor automatische verwerking. Handmatige invoer." },
+    { "id": "handmatig", "chain": "*", "label": "Handmatige invoer (data/manual-offers.csv)", "adapter": "manual", "type": "handmatig ingevoerd uit folders", "scope": "mixed", "enabled": true, "url": "data/manual-offers.csv" }
+  ]
+}
