@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "isDemo": false,
  "lastSuccessfulUpdate": "2026-10-19T08:50:00.351Z",
- "generatedAt": "2026-10-19T09:07:35.705Z",
+ "generatedAt": "2026-10-19T09:15:05.383Z",
  "sources": [
   {
    "id": "edeka",
@@ -61,9 +61,9 @@
    "url": "https://www.lidl.de/c/online-prospekte/s10005610",
    "storeIds": [],
    "status": "unsupported",
-   "checkedAt": "2026-10-19T09:07:35.705Z",
+   "checkedAt": "2026-10-19T09:15:05.383Z",
    "lastSuccessAt": null,
-   "message": "De online folder bevat productnamen maar geen prijzen in machineleesbare vorm. Gebruik handmatige invoer.",
+   "message": "Online folder bevat geen prijzen; lidl.de weigert verzoeken van GitHub-servers wisselend. Wordt wekelijks via de folderscan handmatig bijgewerkt.",
    "rawCount": null,
    "offerCount": 0,
    "rejectedCount": 0
@@ -77,9 +77,9 @@
    "url": "https://www.netto-online.de/filialangebote",
    "storeIds": [],
    "status": "unsupported",
-   "checkedAt": "2026-10-19T09:07:35.705Z",
+   "checkedAt": "2026-10-19T09:15:05.383Z",
    "lastSuccessAt": null,
-   "message": "Bot-bescherming (Akamai) en robots.txt verbiedt de data-endpoints. Gebruik handmatige invoer.",
+   "message": "Aanbiedingen alleen na filiaalkeuze; robots.txt sluit de data-endpoints uit. Wordt wekelijks via de folderscan handmatig bijgewerkt.",
    "rawCount": null,
    "offerCount": 0,
    "rejectedCount": 0
@@ -125,7 +125,7 @@
    "url": "https://www.trinkgut.de/angebote/",
    "storeIds": [],
    "status": "unsupported",
-   "checkedAt": "2026-10-19T09:07:35.705Z",
+   "checkedAt": "2026-10-19T09:15:05.383Z",
    "lastSuccessAt": null,
    "message": "Niet onderzocht voor automatische verwerking. Handmatige invoer.",
    "rawCount": null,
@@ -141,7 +141,7 @@
    "url": "https://www.getraenke-hoffmann.de/angebote",
    "storeIds": [],
    "status": "unsupported",
-   "checkedAt": "2026-10-19T09:07:35.705Z",
+   "checkedAt": "2026-10-19T09:15:05.383Z",
    "lastSuccessAt": null,
    "message": "Niet onderzocht voor automatische verwerking. Handmatige invoer.",
    "rawCount": null,
@@ -157,11 +157,11 @@
    "url": "data/manual-offers.csv",
    "storeIds": [],
    "status": "manual",
-   "checkedAt": "2026-10-19T09:07:35.705Z",
-   "lastSuccessAt": "2026-10-19T09:07:35.705Z",
-   "message": "8 handmatige regels ingelezen.",
-   "rawCount": 8,
-   "offerCount": 8,
+   "checkedAt": "2026-10-19T09:15:05.383Z",
+   "lastSuccessAt": "2026-10-19T09:15:05.383Z",
+   "message": "9 handmatige regels ingelezen.",
+   "rawCount": 9,
+   "offerCount": 9,
    "rejectedCount": 0
   }
  ],
@@ -1397,6 +1397,52 @@
    "stale": false
   },
   {
+   "id": "955b42f980f5",
+   "sourceId": "handmatig",
+   "chain": "lidl",
+   "chainName": "Lidl",
+   "scope": "national",
+   "storeIds": [],
+   "category": "frisdrank",
+   "brand": "Coca-Cola",
+   "product": "Coca-Cola",
+   "description": "Lidl-folder 26.–31.10. p.16 (UVP 1,69). Inhoud 1,25 l afgeleid uit literprijs 0,79 €/l.",
+   "variants": [
+    "Original"
+   ],
+   "variantsOpen": false,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 1.25,
+   "unitsPerPack": 1,
+   "packPrice": 0.99,
+   "depositPerUnit": null,
+   "depositSource": "onbekend",
+   "validFrom": "2026-10-26",
+   "validTo": "2026-10-31",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": [
+     "Lidl-folder 26.–31.10. p.16 (UVP 1,69). Inhoud 1,25 l afgeleid uit literprijs 0,79 €/l."
+    ]
+   },
+   "sourceUrl": "https://www.kaufda.de/Lidl/Sortiment/Coca-Cola",
+   "checkedAt": "2026-10-19T00:00:00Z",
+   "manual": true,
+   "unitPrice": 0.99,
+   "unitPriceExact": 0.99,
+   "pricePerLiter": 0.79,
+   "pricePerLiterExact": 0.792,
+   "totalLiters": 1.25,
+   "stale": false
+  },
+  {
    "id": "f0a6b376969d",
    "sourceId": "handmatig",
    "chain": "rewe",
@@ -1439,6 +1485,51 @@
    "pricePerLiter": 0.89,
    "pricePerLiterExact": 0.8880000000000001,
    "totalLiters": 1.25,
+   "stale": false
+  },
+  {
+   "id": "41f96ad8cd1f",
+   "sourceId": "handmatig",
+   "chain": "netto",
+   "chainName": "Netto Marken-Discount",
+   "scope": "national",
+   "storeIds": [],
+   "category": "frisdrank",
+   "brand": "Coca-Cola",
+   "product": "Coca-Cola, Fanta, Sprite oder Mezzo Mix",
+   "description": "Netto-folder p.1 (UVP 2,19). Inhoud 2 l afgeleid uit literprijs 0,75 €/l, statiegeld niet vermeld. Regionaal kan afwijken.",
+   "variants": [],
+   "variantsOpen": true,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular",
+    "zero"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.49,
+   "depositPerUnit": null,
+   "depositSource": "onbekend",
+   "validFrom": "2026-10-19",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": [
+     "Netto-folder p.1 (UVP 2,19). Inhoud 2 l afgeleid uit literprijs 0,75 €/l, statiegeld niet vermeld. Regionaal kan afwijken."
+    ]
+   },
+   "sourceUrl": "https://www.kaufda.de/Netto-Marken-Discount/Sortiment/Coca-Cola",
+   "checkedAt": "2026-10-19T00:00:00Z",
+   "manual": true,
+   "unitPrice": 1.49,
+   "unitPriceExact": 1.49,
+   "pricePerLiter": 0.75,
+   "pricePerLiterExact": 0.745,
+   "totalLiters": 2,
    "stale": false
   },
   {
@@ -2669,6 +2760,186 @@
    "pricePerLiter": 1.58,
    "pricePerLiterExact": 1.58,
    "totalLiters": 0.5,
+   "stale": false
+  },
+  {
+   "id": "28cd8d90f440",
+   "sourceId": "handmatig",
+   "chain": "netto",
+   "chainName": "Netto Marken-Discount",
+   "scope": "national",
+   "storeIds": [],
+   "category": "frisdrank",
+   "brand": "Fanta",
+   "product": "Coca-Cola, Fanta, Sprite oder Mezzo Mix",
+   "description": "Netto-folder p.1 (UVP 2,19). Inhoud 2 l afgeleid uit literprijs 0,75 €/l, statiegeld niet vermeld. Regionaal kan afwijken.",
+   "variants": [],
+   "variantsOpen": true,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular",
+    "zero"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.49,
+   "depositPerUnit": null,
+   "depositSource": "onbekend",
+   "validFrom": "2026-10-19",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": [
+     "Netto-folder p.1 (UVP 2,19). Inhoud 2 l afgeleid uit literprijs 0,75 €/l, statiegeld niet vermeld. Regionaal kan afwijken."
+    ]
+   },
+   "sourceUrl": "https://www.meinprospekt.de/angebote/coca-cola",
+   "checkedAt": "2026-10-19T00:00:00Z",
+   "manual": true,
+   "unitPrice": 1.49,
+   "unitPriceExact": 1.49,
+   "pricePerLiter": 0.75,
+   "pricePerLiterExact": 0.745,
+   "totalLiters": 2,
+   "stale": false
+  },
+  {
+   "id": "c7827a4f2942",
+   "sourceId": "handmatig",
+   "chain": "netto",
+   "chainName": "Netto Marken-Discount",
+   "scope": "national",
+   "storeIds": [],
+   "category": "frisdrank",
+   "brand": "Mezzo Mix",
+   "product": "Coca-Cola, Fanta, Sprite oder Mezzo Mix",
+   "description": "Netto-folder p.1 (UVP 2,19). Inhoud 2 l afgeleid uit literprijs 0,75 €/l, statiegeld niet vermeld. Regionaal kan afwijken.",
+   "variants": [],
+   "variantsOpen": true,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular",
+    "zero"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.49,
+   "depositPerUnit": null,
+   "depositSource": "onbekend",
+   "validFrom": "2026-10-19",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": [
+     "Netto-folder p.1 (UVP 2,19). Inhoud 2 l afgeleid uit literprijs 0,75 €/l, statiegeld niet vermeld. Regionaal kan afwijken."
+    ]
+   },
+   "sourceUrl": "https://www.meinprospekt.de/angebote/coca-cola",
+   "checkedAt": "2026-10-19T00:00:00Z",
+   "manual": true,
+   "unitPrice": 1.49,
+   "unitPriceExact": 1.49,
+   "pricePerLiter": 0.75,
+   "pricePerLiterExact": 0.745,
+   "totalLiters": 2,
+   "stale": false
+  },
+  {
+   "id": "75c27c528c7e",
+   "sourceId": "handmatig",
+   "chain": "lidl",
+   "chainName": "Lidl",
+   "scope": "national",
+   "storeIds": [],
+   "category": "energy",
+   "brand": "Red Bull",
+   "product": "Red Bull Energy Drink 24er",
+   "description": "Prijs met Lidl Plus-app, zonder app 20,99 €.",
+   "variants": [],
+   "variantsOpen": true,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular",
+    "zero"
+   ],
+   "packType": "blik",
+   "unitVolumeL": 0.25,
+   "unitsPerPack": 24,
+   "packPrice": 19.99,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-19",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": true,
+    "minQty": null,
+    "maxQty": null,
+    "notes": [
+     "Prijs met Lidl Plus-app, zonder app 20,99 €."
+    ]
+   },
+   "sourceUrl": "https://www.dealdoktor.de/user-deals/red-bull-energy-drink-24x-025-l-fuer-1999-e-mit-lidl-plus-083-e-pro-dose-vom-19-bis-24-10/",
+   "checkedAt": "2026-10-19T00:00:00Z",
+   "manual": true,
+   "unitPrice": 0.83,
+   "unitPriceExact": 0.8329166666666666,
+   "pricePerLiter": 3.33,
+   "pricePerLiterExact": 3.3316666666666666,
+   "totalLiters": 6,
+   "stale": false
+  },
+  {
+   "id": "2731e3577490",
+   "sourceId": "handmatig",
+   "chain": "lidl",
+   "chainName": "Lidl",
+   "scope": "national",
+   "storeIds": [],
+   "category": "energy",
+   "brand": "Red Bull",
+   "product": "Red Bull Energy Drink 24er (zonder app)",
+   "description": "Prijs zonder Lidl Plus-app.",
+   "variants": [],
+   "variantsOpen": true,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular",
+    "zero"
+   ],
+   "packType": "blik",
+   "unitVolumeL": 0.25,
+   "unitsPerPack": 24,
+   "packPrice": 20.99,
+   "depositPerUnit": 0.25,
+   "depositSource": "bron",
+   "validFrom": "2026-10-19",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": [
+     "Prijs zonder Lidl Plus-app."
+    ]
+   },
+   "sourceUrl": "https://www.dealdoktor.de/user-deals/red-bull-energy-drink-24x-025-l-fuer-1999-e-mit-lidl-plus-083-e-pro-dose-vom-19-bis-24-10/",
+   "checkedAt": "2026-10-19T00:00:00Z",
+   "manual": true,
+   "unitPrice": 0.87,
+   "unitPriceExact": 0.8745833333333333,
+   "pricePerLiter": 3.5,
+   "pricePerLiterExact": 3.498333333333333,
+   "totalLiters": 6,
    "stale": false
   },
   {
@@ -3944,6 +4215,51 @@
    "pricePerLiter": 1.58,
    "pricePerLiterExact": 1.58,
    "totalLiters": 0.5,
+   "stale": false
+  },
+  {
+   "id": "5a32571c138c",
+   "sourceId": "handmatig",
+   "chain": "netto",
+   "chainName": "Netto Marken-Discount",
+   "scope": "national",
+   "storeIds": [],
+   "category": "frisdrank",
+   "brand": "Sprite",
+   "product": "Coca-Cola, Fanta, Sprite oder Mezzo Mix",
+   "description": "Netto-folder p.1 (UVP 2,19). Inhoud 2 l afgeleid uit literprijs 0,75 €/l, statiegeld niet vermeld. Regionaal kan afwijken.",
+   "variants": [],
+   "variantsOpen": true,
+   "variantAssumed": false,
+   "sugarTypes": [
+    "regular",
+    "zero"
+   ],
+   "packType": "fles",
+   "unitVolumeL": 2,
+   "unitsPerPack": 1,
+   "packPrice": 1.49,
+   "depositPerUnit": null,
+   "depositSource": "onbekend",
+   "validFrom": "2026-10-19",
+   "validTo": "2026-10-24",
+   "conditions": {
+    "loyaltyCard": false,
+    "appCoupon": false,
+    "minQty": null,
+    "maxQty": null,
+    "notes": [
+     "Netto-folder p.1 (UVP 2,19). Inhoud 2 l afgeleid uit literprijs 0,75 €/l, statiegeld niet vermeld. Regionaal kan afwijken."
+    ]
+   },
+   "sourceUrl": "https://www.meinprospekt.de/angebote/coca-cola",
+   "checkedAt": "2026-10-19T00:00:00Z",
+   "manual": true,
+   "unitPrice": 1.49,
+   "unitPriceExact": 1.49,
+   "pricePerLiter": 0.75,
+   "pricePerLiterExact": 0.745,
+   "totalLiters": 2,
    "stale": false
   }
  ],
