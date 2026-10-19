@@ -37,11 +37,11 @@ Demonstratiegegevens (verzonnen) zijn alleen zichtbaar via `?demo=1` en dan met 
 
 ## Online zetten (eenmalig, ±10 minuten)
 
-De code staat al in [github.com/nveldhomme/frisdrank](https://github.com/nveldhomme/frisdrank). Nog te doen in GitHub:
+De code staat al in [github.com/nveldhomme/Frisdrank](https://github.com/nveldhomme/Frisdrank). Nog te doen in GitHub:
 
 1. **Pages aanzetten**: *Settings → Pages → Build and deployment → Source:* kies **GitHub Actions**.
 2. **Schrijfrechten voor de workflow**: *Settings → Actions → General → Workflow permissions:* kies **Read and write permissions** en sla op.
-3. **Eerste update draaien**: *Actions → “Aanbiedingen bijwerken en publiceren” → Run workflow*. Na een paar minuten staat de site op `https://nveldhomme.github.io/frisdrank/`.
+3. **Eerste update draaien**: *Actions → “Aanbiedingen bijwerken en publiceren” → Run workflow*. Na een paar minuten staat de site op `https://nveldhomme.github.io/Frisdrank/`.
 4. Kijk daarna in de app op het tabblad **Bronnen** of EDEKA en REWE “✓ Gecontroleerd” tonen.
 
 Er zijn **geen API-sleutels of secrets** nodig. GitHub Pages is gratis voor openbare repositories; voor een privé-repository is een betaald GitHub-plan nodig.
