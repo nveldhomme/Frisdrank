@@ -43,3 +43,10 @@ test('niets wegschrijven als geen enkele bron werkte terwijl er data was', () =>
   assert.equal(shouldWrite(prev, { sources: [{ status: 'ok' }] }).ok, true);
   assert.equal(shouldWrite(null, { sources: [{ status: 'error' }] }).ok, true);
 });
+
+test('dedupe houdt verschillende smaken en app-prijzen apart', () => {
+  const a = off('r', 'aldi', { variants: ['Original'] });
+  const z = off('z', 'aldi', { variants: ['Zero / suikervrij'] });
+  const app = off('p', 'aldi', { variants: ['Original'], conditions: { appCoupon: true } });
+  assert.equal(dedupe([a, z, app]).length, 3);
+});

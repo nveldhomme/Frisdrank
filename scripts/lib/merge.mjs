@@ -89,7 +89,7 @@ export function dedupe(offers) {
   // Inhoudelijk dubbel (zelfde keten/filiaal/merk/verpakking/prijs/periode) tussen handmatig en automatisch
   const byContent = new Map();
   for (const o of byId.values()) {
-    const k = [o.chain, (o.storeIds || []).join(','), o.brand, o.unitVolumeL, o.unitsPerPack, o.packType, o.packPrice, o.validTo].join('|');
+    const k = [o.chain, (o.storeIds || []).join(','), o.brand, (o.variants || []).join('/'), o.variantsOpen, o.unitVolumeL, o.unitsPerPack, o.packType, o.packPrice, o.validTo, !!o.conditions?.appCoupon, !!o.conditions?.loyaltyCard].join('|');
     const cur = byContent.get(k);
     if (!cur || rank(o) > rank(cur)) byContent.set(k, o);
   }
