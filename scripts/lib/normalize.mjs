@@ -20,7 +20,7 @@ export const BRANDS = [
 
 const VARIANT_RULES = [
   { re: /\bzero\b|ohne zucker|zuckerfrei|sugar[\s-]?free|sugarfree|\blight\b/i, variant: 'Zero / suikervrij', sugar: 'zero' },
-  { re: /\bclassic\b|\boriginal\b/i, variant: 'Original', sugar: 'regular' },
+  { re: /\bclassic\b|\boriginal\b|\bregular\b/i, variant: 'Original', sugar: 'regular' },
   { re: /\bcherry\b|kirsch/i, variant: 'Cherry' },
   { re: /\bvanill/i, variant: 'Vanilla' },
   { re: /\borange\b/i, variant: 'Orange' },
@@ -85,16 +85,20 @@ export function parseSizes(rawText) {
 
 /** Statiegeldbedragen zoals vermeld ("zzgl. 0,25 € Pfand", "zzgl. € 3.10 / € 3.42 Pfand"). */
 export function parseDeposits(text) {
-  const m = /zzgl\.?\s*((?:€\s*)?\d+[.,]\d{2}(?:\s*€)?(?:\s*\/\s*(?:€\s*)?\d+[.,]\d{2}(?:\s*€)?)*)\s*pfand/i.exec(text);
+  const m = /(?:zzgl\.?|\+)\s*((?:€\s*)?\d+[.,]\d{2}(?:\s*€)?(?:\s*\/\s*(?:€\s*)?\d+[.,]\d{2}(?:\s*€)?)*)\s*(?:€\s*)?pfand/i.exec(text);
   if (!m) return [];
   return [...m[1].matchAll(/\d+[.,]\d{2}/g)].map((x) => num(x[0]));
 }
 
-export function parsePackType(text, category) {
+export function parsePackType(text, category, unitVolumeL = null) {
   if (/\bdose|\bdosen|\bcan\b|\bblik/i.test(text)) return 'blik';
   if (/\bfl\.|flasche|\bpet\b|-fl\b/i.test(text)) return 'fles';
   if (/kasten|kiste/i.test(text)) return 'fles';
-  return category === 'energy' ? 'blik' : null;
+  if (category === 'energy') return 'blik';
+  // Niet vermeld: afleiden uit de inhoud (frisdrank ≤ 0,355 l = blikje, ≥ 1 l = fles)
+  if (unitVolumeL != null && unitVolumeL <= 0.355) return 'blik';
+  if (unitVolumeL != null && unitVolumeL >= 1) return 'fles';
+  return null;
 }
 
 export function parseVariants(text) {
@@ -150,7 +154,7 @@ export function normalizeRaw(raw) {
   if (!brands.length) return { offers: [], rejected: null }; // geen relevant product
   const price = typeof raw.price === 'number' ? raw.price : num(raw.price);
   if (!(price > 0 && price < 100)) return { offers: [], rejected: `Geen geldige prijs: "${title}"` };
-  const sizes = parseSizes(`${title} ${desc}`);
+  const sizes = parseSizes(raw.sizeText != null ? raw.sizeText : `${title} ${desc}`);
   if (!sizes.length) return { offers: [], rejected: `Inhoud niet herkend: "${title} — ${desc}"` };
   const deposits = parseDeposits(all);
   const conditions = parseConditions(all);
@@ -159,7 +163,7 @@ export function normalizeRaw(raw) {
   const offers = [];
   sizes.forEach((size, idx) => {
     for (const b of brands) {
-      const packType = parsePackType(all, b.category);
+      const packType = parsePackType(all, b.category, size.unitVolumeL);
       if (!packType) continue;
       // Statiegeld per eenheid bepalen
       let depositPerUnit = null;

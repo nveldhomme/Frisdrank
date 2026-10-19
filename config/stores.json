@@ -1,5 +1,5 @@
 {
-  "_info": "Filialen in het zoekgebied. Alleen winkels waarvan de aanwezigheid is bevestigd. 'confirmedBy': edeka-marktzoeker = EDEKA's eigen filiaalzoeker; google-maps = Google Maps-vermelding. Gecontroleerd op 2026-10-19. Zet 'active' op false om een winkel te verbergen.",
+  "_info": "Filialen in het zoekgebied. Alleen winkels waarvan de aanwezigheid is bevestigd. 'confirmedBy': edeka-marktzoeker = EDEKA's eigen filiaalzoeker; google-maps = Google Maps-vermelding; penny-filialenlijst = PENNY's eigen filialenlijst (bevat ook de verkoopregio). Gecontroleerd op 2026-10-19. Zet 'active' op false om een winkel te verbergen.",
   "cities": ["Emmerich am Rhein", "Kleve", "Goch", "Kalkar", "Rees", "Isselburg", "Bocholt", "Rhede"],
   "chains": {
     "edeka": "EDEKA",
@@ -92,11 +92,13 @@
     { "id": "netto-bocholt-hochfeld", "chain": "netto", "name": "Netto", "address": "Hochfeldstr. 85", "city": "Bocholt", "confirmedBy": "google-maps", "active": true },
     { "id": "netto-rhede", "chain": "netto", "name": "Netto", "address": "Feldmark 10", "city": "Rhede", "confirmedBy": "google-maps", "active": true },
 
-    { "id": "penny-emmerich-elten", "chain": "penny", "name": "PENNY", "address": "Beeker Str. 22 (Elten)", "city": "Emmerich am Rhein", "confirmedBy": "google-maps", "active": true },
-    { "id": "penny-emmerich-nierenberger", "chain": "penny", "name": "PENNY", "address": "Nierenberger Str. 26", "city": "Emmerich am Rhein", "confirmedBy": "google-maps", "active": true },
-    { "id": "penny-kleve", "chain": "penny", "name": "PENNY", "address": "Materborner Allee 11", "city": "Kleve", "confirmedBy": "google-maps", "active": true },
-    { "id": "penny-bocholt-roonstr", "chain": "penny", "name": "PENNY", "address": "Roonstr. 2-10", "city": "Bocholt", "confirmedBy": "google-maps", "active": true },
-    { "id": "penny-bocholt-suderwick", "chain": "penny", "name": "PENNY", "address": "Sporker Str. 2 (Suderwick)", "city": "Bocholt", "confirmedBy": "google-maps", "active": true },
+    { "id": "penny-emmerich-elten", "chain": "penny", "pennyRegion": "15A-09-33", "name": "PENNY", "address": "Beeker Str. 22 (Elten)", "city": "Emmerich am Rhein", "confirmedBy": "google-maps", "active": true },
+    { "id": "penny-emmerich-nierenberger", "chain": "penny", "pennyRegion": "15A-09-33", "name": "PENNY", "address": "Nierenberger Str. 26", "city": "Emmerich am Rhein", "confirmedBy": "google-maps", "active": true },
+    { "id": "penny-kleve", "chain": "penny", "pennyRegion": "15A-09-33", "name": "PENNY", "address": "Materborner Allee 11", "city": "Kleve", "confirmedBy": "google-maps", "active": true },
+    { "id": "penny-bocholt-roonstr", "chain": "penny", "pennyRegion": "15A-09-33", "name": "PENNY", "address": "Roonstr. 2-10", "city": "Bocholt", "confirmedBy": "google-maps", "active": true },
+    { "id": "penny-bocholt-westend", "chain": "penny", "pennyRegion": "15A-09-33", "name": "PENNY Westend", "address": "Dinxperloer Str. 5d", "city": "Bocholt", "confirmedBy": "penny-filialenlijst", "active": true, "note": "Heropening na verbouwing per 22-10-2026 (volgens PENNY)." },
+    { "id": "penny-rhede", "chain": "penny", "pennyRegion": "15A-10-31", "name": "PENNY", "address": "Krechtinger Str. 81", "city": "Rhede", "confirmedBy": "penny-filialenlijst", "active": true },
+    { "id": "penny-bocholt-suderwick", "chain": "penny", "pennyRegion": "15A-09-33", "name": "PENNY", "address": "Sporker Str. 2 (Suderwick)", "city": "Bocholt", "confirmedBy": "google-maps", "active": true },
 
     { "id": "trinkgut-emmerich", "chain": "trinkgut", "name": "trinkgut Konopatzki", "address": "Wallstr. 10", "city": "Emmerich am Rhein", "confirmedBy": "google-maps", "active": true },
     { "id": "trinkgut-kleve-briener", "chain": "trinkgut", "name": "trinkgut Rottmann", "address": "Briener Str. 46", "city": "Kleve", "confirmedBy": "google-maps", "active": true },

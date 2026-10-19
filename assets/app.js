@@ -53,6 +53,7 @@ function depositLabel(o) {
   return `+ ${fmtEuro(o.depositPerUnit)} statiegeld per ${unitWord(o)}${o.depositSource === 'afgeleid' ? ' (afgeleid)' : ''}`;
 }
 function validityLabel(o) {
+  if (!o.validTo && o.validFrom) return `vanaf ${dayName(o.validFrom)} ${fmtDate(o.validFrom)}, zolang de voorraad strekt`;
   if (!o.validTo) return 'geldigheid onbekend';
   if (!o.validFrom) return `t/m ${dayName(o.validTo)} ${fmtDate(o.validTo)} (startdatum niet vermeld)`;
   return `${dayName(o.validFrom)} ${fmtDate(o.validFrom)} t/m ${dayName(o.validTo)} ${fmtDate(o.validTo)}`;
