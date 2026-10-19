@@ -18,6 +18,9 @@ for (const url of urls) {
     r.status = res.status; r.finalUrl = res.url; r.type = res.headers.get('content-type');
     const text = await res.text();
     r.length = text.length;
+    r.rawFile = `diagnose/raw-${out.length}.txt`;
+    await mkdir('diagnose', { recursive: true });
+    await writeFile(r.rawFile, text.slice(0, 6_000_000));
     r.flags = { nextData: text.includes('__NEXT_DATA__'), ldJson: text.includes('application/ld+json'), nuxt: text.includes('__NUXT__'), cloudflare: /cf-chl|challenge-platform|Verifizierung/i.test(text), restPaths: [...new Set((text.match(/\/\.rest\/[a-zA-Z0-9/_-]+/g) || []))].slice(0, 20), apiHosts: [...new Set((text.match(/https?:\/\/[a-z0-9.-]*(api|endpoints)[a-z0-9.-]*\.[a-z]+[^"' <)]{0,80}/gi) || []))].slice(0, 20) };
     if ((r.type || '').includes('json')) { try { r.jsonShape = keysOf(JSON.parse(text)); r.jsonSample = text.slice(0, 3000); } catch {} }
     else if (url.endsWith('robots.txt')) r.body = text.slice(0, 4000);

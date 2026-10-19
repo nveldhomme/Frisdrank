@@ -23,6 +23,6 @@ jobs:
           git config user.name "frisdrank-radar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B diagnose
-          git add -f diagnose/report.json
+          git add -f diagnose/
           git commit -m "Diagnoserapport" -q
           git push -f origin diagnose
